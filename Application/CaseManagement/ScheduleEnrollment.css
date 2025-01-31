@@ -1,0 +1,88 @@
+﻿/*
+ScheduleEnrollment.css
+==================================================================================
+All the styles that apply to the schedule enrollment controller actions.
+Shamelessly lifted and adapted from the home controller CSS.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Layout of main page parts
+---------------------------------------------------------------------------------- */
+
+#enrollment_panel {margin-right: 330px;  margin-bottom: 0;}
+
+#side_panel {position: absolute;  top: 0;  right: 0;  width: 320px;}
+#side_panel #todo_list,
+#side_panel #report_list {}
+
+
+
+
+/* Browse database styles
+---------------------------------------------------------------------------------- */
+
+/* record type selector at the top of the page */
+
+#enrollment_panel #record_type {overflow: auto;  position: relative;  margin-bottom: 0px;}
+#enrollment_panel #record_type li {float: left;}
+#enrollment_panel #record_type li.search_options {float: right;}
+
+/* Hide search options for each form */
+#enrollment_panel #child_search_options,
+#enrollment_panel #family_search_options,
+#enrollment_panel #provider_search_options {display: none;}
+
+/* Hides and shows forms */
+#enrollment_panel form.shown {display: block;}
+#enrollment_panel form.hidden {display: none;}
+
+/* Search form input formatting */
+#enrollment_panel form fieldset {position: relative;  overflow: visible;  margin-bottom: 5px;  padding: 1px;}
+#enrollment_panel form fieldset input {float: left;}
+#enrollment_panel form fieldset .button_row {position: absolute;  top: 0;  right: 1px;}
+#enrollment_panel form fieldset #go_button {margin-right: 5px;}
+#enrollment_panel form .search_query {margin: 5px 5px 0 0;  width: 475px;  font-size: 1.4em;  font-weight: bold;}
+
+/* Row-toggle formatting */
+
+#enrollment_panel #schedule_listing {position: relative;  height: 1%;}
+
+#enrollment_panel #schedule_listing table tbody td .toggle_button {
+	width: 24px;  height: 16px;
+	background-position: 0 -16px;
+	background-image: url(../../../images/toggle_arrows_small.png);
+}
+
+#enrollment_panel #schedule_listing table tbody tr.detail_row > td,
+#enrollment_panel #schedule_listing table tbody tr.selected > td {background-color: #D5EEFF;}
+
+#enrollment_panel #schedule_listing table tbody tr.selected td .toggle_button {background-position: 0 0;  background-image: url(../../../images/toggle_arrows.png) !important;}
+
+#enrollment_panel #schedule_listing table tbody tr.summary_row:hover {cursor: pointer;}
+#enrollment_panel #schedule_listing table tbody tr.hover > td {background-color: #D5EEFF;}
+#enrollment_panel #schedule_listing table tbody tr.hover > td .toggle_button {background-image: url(../../../images/toggle_arrows.png);}
+
+#enrollment_panel #schedule_listing table tbody tr.detail_row {display: none;}
+#enrollment_panel #schedule_listing table tbody tr.show_record {display: table-row !important;}
+
+#enrollment_panel #schedule_listing table td table.detail_data {border-collapse: separate;  width: 100%;}
+#enrollment_panel #schedule_listing table td table.detail_data th {font-size: 1em;  padding: 6px 9px;}
+#enrollment_panel #schedule_listing table td table.detail_data th,
+#enrollment_panel #schedule_listing table td table.detail_data td {border-left: 1px solid #EEEEEE;  border-bottom: 1px solid #EEEEEE;}
+
+#enrollment_panel #schedule_listing table td.browse_link {white-space: nowrap;  width: 7.5em;}
+#enrollment_panel #schedule_listing table td.browse_link * {display: block;  float: left;}
+#enrollment_panel #schedule_listing table td.browse_link a {line-height: 13px;  margin-right: 10px;}
+
+
+/* Hides specific trs */
+
+#enrollment_panel table tbody tr.detail_row {display: none;}
+
+/* Specific line and text formatting */
+
+#enrollment_panel tr.dividing_row td {border-top: 1px solid black; border-bottom: 2px solid black;}
+#enrollment_panel tr.totals_row td {border-bottom: 1px solid black;}
+.RMR {color: Red;}

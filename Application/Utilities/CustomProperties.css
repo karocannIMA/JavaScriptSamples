@@ -1,0 +1,50 @@
+﻿/*
+CustomProperties.css
+==================================================================================
+Contains all styles specific to the custom properties form.
+----------------------------------------------------------------------------------
+*/
+
+#SetupCustomProperties {
+    position: relative;
+    overflow: auto;
+}
+        
+#SetupCustomProperties fieldset {
+    display: block;
+    float: left;
+    /*width: 100px;*/
+    margin-right: 10px;
+}
+        
+#SetupCustomProperties fieldset:last-child {
+    margin-right: 0;
+}
+        
+#Objects,
+#ObjectControls,
+#properties_container {
+    width: 200px;
+    height: 250px;
+}
+        
+#properties_container {
+    width: 510px;
+}
+        
+#properties_container {
+    line-height: 1.25em;
+}
+        
+        
+#properties_container #instructions_arrow {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+        
+        
+#object_control_properties_list {
+    background-color: #EFEFEF;
+}
+        

@@ -1,0 +1,62 @@
+﻿/*
+ScheduleEnrollment.css
+==================================================================================
+All the styles that apply to the schedule enrollment controller actions.
+Shamelessly lifted and adapted from the home controller CSS.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Layout of main page parts
+---------------------------------------------------------------------------------- */
+
+#family_fee_entry_detail_panel {margin-right: 330px;  margin-bottom: 0;}
+
+#side_panel {position: absolute;  top: 0;  right: 0;  width: 320px;}
+#side_panel #todo_list,
+#side_panel #report_list {}
+
+
+
+
+/* Browse database styles
+---------------------------------------------------------------------------------- */
+
+/* record type selector at the top of the page */
+
+#family_fee_entry_detail_panel #record_type {overflow: auto;  position: relative;  margin-bottom: 0px;}
+#family_fee_entry_detail_panel #record_type li {float: left;}
+#family_fee_entry_detail_panel #record_type li.search_options {float: right;}
+
+/* Hide search options for each form */
+#family_fee_entry_detail_panel #child_search_options,
+#family_fee_entry_detail_panel #family_search_options,
+#family_fee_entry_detail_panel #provider_search_options {display: none;}
+
+/* Hides and shows forms */
+#family_fee_entry_detail_panel form.shown {display: block;}
+#family_fee_entry_detail_panel form.hidden {display: none;}
+
+/* Search form input formatting */
+#family_fee_entry_detail_panel form fieldset {position: relative;  overflow: visible;  margin-bottom: 5px;  padding: 1px;}
+#family_fee_entry_detail_panel form fieldset input {float: left;}
+#family_fee_entry_detail_panel form fieldset .button_row {position: absolute;  top: 0;  right: 1px;}
+#family_fee_entry_detail_panel form fieldset #go_button {margin-right: 5px;}
+#family_fee_entry_detail_panel form .search_query {margin: 5px 5px 0 0;  width: 475px;  font-size: 1.4em;  font-weight: bold;}
+
+/* Row-toggle formatting */
+
+#family_fee_entry_detail_panel #family_fee_entry_detail {position: relative;  height: 1%;}
+
+#family_fee_entry_detail_panel #family_fee_entry_detail table td table {border-collapse: separate;  width: 100%;}
+
+#family_fee_entry_detail_panel #family_fee_entry_listing .content {padding: 10px;}
+#family_fee_entry_detail_panel #family_fee_entry_listing .content ul li {border: 1px solid #EEEEEE; border-top: 0;}
+#family_fee_entry_detail_panel #family_fee_entry_listing .content ul li.header {border: 0;}
+
+
+/* Hides specific trs */
+
+#family_fee_entry_detail_panel table tbody tr.detail_row {display: none;}
+

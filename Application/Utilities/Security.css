@@ -1,0 +1,62 @@
+﻿
+        
+#update_license_form .license_information {overflow: auto; float: left; margin: .5em 0 1em 0;}
+#update_license_form .license_information label {font-weight: bold;}
+#update_license_form .license_information #LicenseNo {width: 200px;}
+#update_license_form .license_information #update_license_button {float: left;}
+        
+#update_license_form .license_properties {clear: both; margin: 0 0 2em 0;}
+#update_license_form .license_properties ul {overflow: auto;}
+#update_license_form .license_properties ul li {float: left; margin-right: 2em;}
+#update_license_form .license_properties ul li span,
+#update_license_form .license_properties ul li label {padding: 4px;}
+#update_license_form .license_properties ul li label {font-weight: bold; font-size: 1.25em;}
+        
+#permissions_form #Groups,
+#permissions_form #Users {width: 100%;}
+        
+#permissions_form input[type='checkbox'],
+#permissions_form label {width: auto;}
+        
+#permissions_form div.column_row {margin-bottom: 2em;}
+        
+#permissions_form #addNewGroup, 
+#permissions_form #copyGroupRights,
+#permissions_form #addNewUser,
+ #permissions_form #searchUser{margin-top: .3em;}
+#permissions_form #ShowInactiveUsers_Dialog {margin-top: .25em;}
+        
+#permissions_form .ShowInactiveUsers_Dialog,
+#permissions_form .ShowInactiveUsers_Dialog * {float: left;}
+#permissions_form .ShowInactiveUsers_Dialog input {margin-left: 10px; margin-top: 2px;}
+        
+#permissions table {width: 100%;}
+#permissions table tr.object_header td {background-color: white;}
+#permissions table tr.object_header:hover {background-color: #D6EFFF;}
+#permissions table tr.object_header h4 {line-height: 31px; margin: 0;}
+#permissions table tr.object_row {display: none;}
+        
+#permissions {overflow: auto;}
+        
+#permissions .header a {display: block;}
+#permissions .content table {width: 100%;}
+        
+fieldset legend {color: Black; text-decoration: none;}
+
+.permissions_header thead th,
+#permissions tbody td {
+    text-align: center;
+    width: 75px;
+}
+
+#permissions tbody td .icon_image {
+    float: none;
+}
+
+.permissions_header thead th:first-child,
+#permissions tbody td:first-child {
+    text-align: left;
+    width: auto;
+}
+
+

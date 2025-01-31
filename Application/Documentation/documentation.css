@@ -1,0 +1,177 @@
+﻿
+/**************************************************************************************/
+/* Basic/Global styles ****************************************************************/
+
+#developer_doc_popup .scroll {overflow: scroll;}
+#developer_doc_popup h2 {font-size: 1.4em; margin-bottom: .5em;}
+#developer_doc_popup .button_row .close_button {float: right;}
+#developer_doc_popup .documentation_content .scroll {height: 425px; padding-bottom: 20px;}
+
+
+
+/**************************************************************************************/
+/* REFERENCE NAVIGATION ***************************************************************/
+
+#documentation_references ul {overflow: auto;}
+#documentation_references ul li {
+    float: left;
+    padding-top: 5px;
+    width: 80px;
+    height: 45px;
+    margin-right: 10px;
+    border: 1px solid silver;
+    text-align: center;
+}
+
+#documentation_references ul li:hover {background-color: #D6EFFF;}
+#documentation_references ul li a {display: block;}
+#documentation_references ul li a span {
+    font-weight: bold;
+    display: block;
+    margin-top: 3px;
+}
+
+#documentation_main_content {margin-top: 10px; overflow: auto;}
+
+
+
+/**************************************************************************************/
+/* GUIDES LISTING *********************************************************************/
+
+#documentation_guides {width: 230px; margin-right: 10px; float: left;}
+#documentation_guides #guide_dialog {height: 415px;}
+#documentation_guides ul {list-style-type: circle; padding-left: 2em;}
+#documentation_guides ul li {margin-bottom: 5px;}
+
+
+
+/**************************************************************************************/
+/* BULLETINS FORMATTING ***************************************************************/
+
+#documentation_bulletins {width: 497px; float: left;}
+#documentation_bulletins #bulletins_dialog {height: 415px;}
+#documentation_bulletins #bulletins {overflow: scroll; position: absolute; top: 0; right: 10px; bottom: 10px; left: 0;}
+
+#documentation_bulletins #bulletins li {
+    border-bottom: 1px solid silver;
+    margin-right: 5px;
+}
+
+#documentation_bulletins #bulletins li h4 {
+    font-size: 1.1em;
+    padding: 10px 5px;
+    text-decoration: underline;
+}
+
+#documentation_bulletins #bulletins li h4:hover {
+    background-color: #D6EFFF; cursor: pointer;
+}
+
+#documentation_bulletins #bulletins li h4 span {
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: Gray;
+    font-weight: normal;
+}
+
+#documentation_bulletins #bulletins li .bulletin_content {
+    display: none;
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/**************************************************************************************/
+/* ICONS REFERENCE ********************************************************************/
+
+#icon_reference div.icon_column {position: relative; float: left; width: 220px; margin-right: 15px;}
+#icon_reference div.icon_column:last-child {margin-right: 0;}
+
+#icon_reference table.icon_listing {
+    width: 100%;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    margin-bottom: 15px;
+}
+
+#icon_reference table.icon_listing:last-child {margin-bottom: 0px;}
+
+#icon_reference table.icon_listing th {font-size: 1.2em; padding: 6px 4px !important; background-color: #EFEFEF;}
+#icon_reference table.icon_listing th,
+#icon_reference table.icon_listing td {
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 2px 4px;
+    vertical-align: middle;
+    text-align: center;
+}
+#icon_reference table.icon_listing th:last-child,
+#icon_reference table.icon_listing td:last-child {text-align: left;}
+
+
+
+/**************************************************************************************/
+/* UI HELPER REFERENCE ****************************************************************/
+
+#ui_helpers_reference .methods li {
+    margin-top: 5px;
+    font-family: Courier new;
+    font-size: 1em;
+    line-height: 1em;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+#ui_helpers_reference .examples li {
+    clear: both;
+}
+
+#ui_helpers_reference .examples li p {
+    display: block;
+}
+#ui_helpers_reference .examples,
+#ui_helpers_reference .notes {
+    margin-top: 10px;
+}
+
+#ui_helpers_reference .examples h4,
+#ui_helpers_reference .notes h4 {
+    margin-bottom: 10px;
+}
+
+
+/**************************************************************************************/
+/* TOGGLE LIST STYLES *****************************************************************/
+
+#developer_doc_popup .toggle_list > li {
+    border-bottom: 1px solid silver;
+    margin-right: 5px;
+}
+
+#developer_doc_popup .toggle_list > li .header {padding: 10px 5px;}
+#developer_doc_popup .toggle_list > li .header:hover {background-color: #D6EFFF; cursor: pointer;}
+
+#developer_doc_popup .toggle_list > li .header h4 {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+#developer_doc_popup .toggle_list > li .header p {
+    display: block;
+    font-weight: normal;
+    text-decoration: none !important;
+    margin-top: 5px; margin-bottom: 0;
+}
+
+#developer_doc_popup .toggle_list > li .content {display: none; margin-top: 5px; padding: 5px;}
+
+
+
+
+/**************************************************************************************/
+/* CSS CLASS REFERENCE ****************************************************************/
+
+
+

@@ -1,0 +1,74 @@
+﻿tr.expandable:hover {background-color:#D5EEFF;}                               
+
+/* arrow up */
+.expanded {/*width: 24px;  
+            height: 16px;*/
+            
+            background-position: 0 16px !important;
+            /*background-repeat:no-repeat;*/
+            background-image: url(../../../images/toggle_arrows.png) !important;     
+    }
+
+/* arrow down */
+.unexpanded {background-image: url(../../../images/toggle_arrows.png); 
+}	    
+    
+.hover     {/*width: 24px;  
+                height: 16px;*/
+                
+	            background-position: 0 -16px ;
+	            background-repeat:no-repeat;
+	            background-image: url(../../../images/toggle_arrows.png);	
+}	                                        
+	                
+.unhover     {/*width: 24px;  
+                height: 16px;*/
+	            background-position: 0 -16px;
+	            background-repeat:no-repeat;
+	            background-image: url(../../../images/toggle_arrows_small.png);	
+}	         
+
+.show_entity_compliancetask {
+    border-collapse:collapse;
+    border:5px solid #D5EEFF; 
+    background-color:#D5EEFF; 
+    position:relative;
+}    
+
+
+.tl 
+{
+    position:absolute;
+    width:10px;
+    top:0;
+    left:0;
+	background-image: url(../../../images/ui/panel_blue_bottom_left.png); /*top left*/ 
+	background-repeat:no-repeat;
+	}
+
+.tr 
+{
+    top:0;
+    right:0;
+    width:10px;
+    position:absolute;
+	background-image: url(../../../images/ui/dialog_top_right.png) /*top right*/ no-repeat;
+}
+
+.bl 
+{
+    bottom:0;
+    left:0;
+    width:10px;
+    position:absolute;
+	background-image: url(../../../images/ui/dialog_bottom_left.png) /*bottom left*/ no-repeat;
+}
+
+.br 
+{
+    bottom:0;
+    right:0;
+    width:10px;
+    position:absolute;
+	background-image: url(../../../images/ui/dialog_bottom_right.png) /*bottom right*/ no-repeat;
+}

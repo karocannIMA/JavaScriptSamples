@@ -1,0 +1,81 @@
+﻿/*
+FamilyEmployment.css
+==================================================================================
+Contains all styles specific to the family employment form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#family_employment .fbold {font-weight:bold;}
+#family_employment  td:hover .toggle_button {background-image: url(../../../images/toggle_arrows.png);}
+/* #family_employment  tr:hover > td {background-color: #D5EEFF;} */
+#family_employment  td.selected .toggle_button {background-position: 0 0;  background-image: url(../../../images/toggle_arrows.png) !important;}
+.toggle_button {
+	width: 24px;  height: 16px;
+	background-position: 0 -16px;
+	background-image: url(../../../images/toggle_arrows_small.png);
+}
+
+
+
+#family_employment .schedule_row  tr:hover > td {background-color: #D5EEFF;}
+
+
+#family_employment div.schedule_row {display: none;}
+
+#family_employment_details {padding-left:05px;}
+#family_employment_details label  {padding-left:5px; padding-right:5px; }
+#family_employment_details td  {padding-top:1px; padding-bottom:1px;}
+.box 
+{
+ width: 99%; 
+ height:93%;  
+ overflow: auto;  
+ position: relative;
+ background-color:inherit;
+ border-width:3px; 
+ border-style:inset;
+ border-color:inherit;
+ margin-left:1px;
+ margin-top:1px;
+ } 
+.boxheader {
+     color:white; 
+     background-color:#616D7E; 
+     padding-left:2px; 
+     padding-top:2px; 
+     padding-bottom:2px; 
+     font-size:12px;
+}  
+   
+#family_employment_details #employment_fields input  {width:480px;}
+#family_employment_details #employment_fields select  {width:485px;}
+#family_employment_details #employment_fields [readonly] 
+{
+background-color: White;
+border: White 1px solid;
+color: Black;
+cursor:auto; 
+} 
+#family_employment_details #employment_fields #ID {width:130px; margin-right:20px;}
+#family_employment_details #employment_fields #FamilyID {width:130px;}
+#family_employment_details #employment_fields #City {width:245px;}
+#family_employment_details #employment_fields #State {width:30px; margin-right:15px;}
+#family_employment_details #employment_fields #ZipCode {width:70px;}
+#family_employment_details #StartDate {width:115px; }
+#family_employment_details #StopDate {width:115px;}
+
+ #family_employment_details #employment_fields #CompanyName {width:92%;}
+ 
+ #family_employment_details #employment_fields #ContactTypeID {width:100%;} 
+  #family_employment_details #employment_fields #ContactName {width:100%;} 
+ #family_employment_details #employment_fields    #Extension {width:40px;}
+ #family_employment_details #employment_fields #ContactTypes {width:160px;}
+
+
+#employment_schedule_list .SchedDays {padding-right:3px}
+#employment_schedule_list #DaysSun {margin-left:-10px}
+#employment_schedule_list #DaysSat {margin-left:4px}
+
+#weekdaybox .td {padding-right:15px}
+
+

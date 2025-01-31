@@ -1,0 +1,316 @@
+﻿/*
+Home.css
+==================================================================================
+All the styles that apply to the home controller actions.  This includes the 
+login and dashboard pages.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Layout of main page parts
+---------------------------------------------------------------------------------- */
+
+#browse_records {margin-right: 330px;  margin-bottom: 0;}
+
+#side_panel {position: absolute;  top: 0;  right: 0;  width: 320px;}
+#side_panel #todo_list,
+#side_panel #report_list {}
+
+
+
+
+/* Browse database styles
+---------------------------------------------------------------------------------- */
+
+/* record type selector at the top of the page */
+
+#browse_records #record_type {overflow: auto;  position: relative;  margin-bottom: 0px;}
+#browse_records #record_type li {float: left;}
+#browse_records #record_type li.search_options {float: right;}
+
+/* Search options for each form */
+#browse_records #child_search_options,
+#browse_records #family_search_options,
+#browse_records #provider_search_options {display: none;}
+
+#specialistRestriction {float: left;}
+#viewStyle {float: right;}
+
+#browse_records .search_options {margin-bottom: 0 !important; padding-bottom: 0 !important;}
+#browse_records .search_options p {margin-bottom: 5px;}
+#browse_records .search_options #restrictToSpecialist {margin-right: 10px;}
+#browse_records .search_options h4 {
+    clear: both;
+    margin-bottom: .25em; margin-top: 1em;
+    font-size: 1.1em;
+}
+#browse_records #provider_search_options h4 {
+    margin-top: 0; margin-right: 10px;
+    float: left;
+}
+#browse_records #provider_search_options div.rows {clear: both;}
+
+
+/* Hides and shows forms */
+#browse_records form.shown {display: block;}
+#browse_records form.hidden {display: none;}
+
+/* Search form input formatting */
+#browse_records form fieldset {position: relative;  overflow: visible;  margin-bottom: 5px;  padding: 1px;}
+#browse_records form fieldset a, input {float: left;}
+#browse_records form fieldset .button_row {position: absolute;  top: 0;  right: 1px;}
+#browse_records form fieldset #go_button {margin-right: 5px;}
+#browse_records form .search_query {margin: 5px 5px 0 0;  width: 475px;  font-size: 1.4em;  font-weight: bold;}
+
+/* Row-toggle formatting */
+
+#browse_records #search_results {position: relative;  height: 1%;}
+
+#browse_records #search_results div.content {padding-top: 10px; padding-right: 10px; padding-bottom: 10px;}
+#browse_records #search_results table tr td {padding: 2px 4px;}
+
+#browse_records #search_results table.detail_data {border-collapse: separate;  width: 100%;}
+#browse_records #search_results table.detail_data th {font-size: 1em;  padding: 6px 9px;}
+#browse_records #search_results table.detail_data th,
+#browse_records #search_results table.detail_data td {border-left: 1px solid #EEEEEE;  border-bottom: 1px solid #EEEEEE;}
+
+#browse_records #search_results table.detail_data td:last-child {border-right: 1px solid #EEEEEE;}
+
+
+/*
+#browse_records #search_results table tbody tr.detail_row > td,
+#browse_records #search_results table tbody tr.selected > td {background-color: #D5EEFF;}
+
+#browse_records #search_results table tbody tr.selected td .toggle_button {background-position: 0 0;  background-image: url(../../../images/toggle_arrows.png) !important;}
+
+#browse_records #search_results table tbody tr.summary_row:hover {cursor: pointer;}
+#browse_records #search_results table tbody tr.hover > td {background-color: #D5EEFF;}
+#browse_records #search_results table tbody tr.hover > td .toggle_button {background-image: url(../../../images/toggle_arrows.png);}
+
+#browse_records #search_results table tbody tr.detail_row {display: none;}
+#browse_records #search_results table tbody tr.show_record {display: table-row !important;}
+
+
+#browse_records #search_results table td.browse_link {white-space: nowrap;  width: 7.5em;}
+#browse_records #search_results table td.browse_link * {display: block;  float: left;}
+#browse_records #search_results table td.browse_link a {line-height: 13px;  margin-right: 10px;}
+*/
+
+
+
+/* Reminders list
+---------------------------------------------------------------------------------- */
+#reminders_list
+{
+  max-height:50%;
+}
+
+#reminders_list .reminders_wrap
+{
+    width: 290px;
+    display: inline-block;
+    overflow:hidden;
+}
+
+#reminders_list .reminders_wrap table tr td.reminder
+{
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 18px;
+    width: 55%;
+    word-wrap: break-word;
+}
+#reminders_list .reminders_wrap table tr td.reminder_due_date
+{
+    padding-left: 10px;
+}
+#reminders_list table td.reminder a.family_link 
+{
+     display: block;
+     padding-bottom: 4px;
+}
+#reminders_list .reminders_wrap .reminders_list_content
+{
+    max-height: 15em;
+   overflow:auto;
+}
+
+/* Report list
+---------------------------------------------------------------------------------- */
+
+
+#report_list_header {
+	position: relative;  overflow: hidden;
+	height: 24px;  padding: 5px;
+	line-height: 24px;  font-size: 1.6em;
+}
+
+#report_list_header * {display: block;  float: left;  margin-right: 10px;}
+
+#report_list table.record_display th {font-weight: bold;}
+#report_list table.record_display th,
+#report_list table.record_display td {vertical-align: middle;}
+#report_list table.record_display td {padding: 8px 10px;}
+
+#report_list #report_panel_selector,
+#reminder_list #report_panel_selector {
+    overflow: hidden;
+}
+    
+#report_list #report_panel_selector li,
+#reminder_list #report_panel_selector li {
+    float: left;
+    padding: 2px 4px;
+    margin: 0 4px 4px;
+    line-height: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: silver;
+    
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#report_list #report_panel_selector li:hover, 
+#reminder_list #report_panel_selector li:hover {background-color: gray; color: White;}
+
+#report_list #report_panel_selector li.selected, 
+#reminder_list #report_panel_selector li.selected {
+    background-color: gray;
+    margin: 0;  padding: 4px 8px;
+    color: White;
+}
+
+#report_list #report_panel_selector .favorites,
+#report_list #report_panel_selector .category {width: 40%;}
+#report_list #report_panel_favorites,
+#report_list #report_panel_categories {border: 1px solid silver;}
+
+#report_list #report_panel_favorites {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -o-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#report_list #report_panel_categories {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#report_list #report_panel_categories {display: none;}
+
+#report_list #report_panel_categories ul.category_list li h4 {
+    padding: 8px 8px;
+    margin-bottom: 1px;
+    color: black;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: White;
+}
+
+#report_list #report_panel_categories ul.category_list li.category h4.selected,
+#report_list #report_panel_categories ul.category_list li.category h4:hover {background-color: #D6EFFF; cursor: pointer;}
+#report_list #report_panel_categories ul.category_list li.category h4.selected {border-top: 4px solid silver;}
+
+#report_list #report_panel_categories ul.reports_list {display: none; border-bottom: 4px silver solid;}
+#report_list #report_panel_categories ul.reports_list li.report,
+#report_list #report_panel_categories ul.reports_list li.favorite {padding-left: 16px !important;}
+
+#report_list ul.favorites_list li.report,
+#report_list ul.favorites_list li.favorite,
+#report_list ul.reports_list li.report,
+#report_list ul.reports_list li.favorite {
+    font-size: 1em;
+    padding: 6px;
+    height: 16px;
+    margin-bottom: 1px;
+    background-color: White;
+}
+
+#report_list ul.favorites_list li.report div.surface,
+#report_list ul.favorites_list li.favorite div.surface,
+#report_list ul.reports_list li.report div.surface,
+#report_list ul.reports_list li.favorite div.surface {position: relative;}
+
+#report_list ul.favorites_list li.report div.surface span a,
+#report_list ul.favorites_list li.favorite div.surface span a,
+#report_list ul.reports_list li.report div.surface span a,
+#report_list ul.reports_list li.favorite div.surface span a {color: Blue;}
+
+#report_list ul.favorites_list li.report div.surface img,
+#report_list ul.favorites_list li.favorite div.surface img,
+#report_list ul.reports_list li.report div.surface img,
+#report_list ul.reports_list li.favorite div.surface img {float: right;}
+
+#report_list ul.favorites_list li.report div.surface span,
+#report_list ul.favorites_list li.favorite div.surface span,
+#report_list ul.reports_list li.report div.surface span,
+#report_list ul.reports_list li.favorite div.surface span {text-decoration: underline;}
+
+#report_list ul.favorites_list li.report div.surface span,
+#report_list ul.favorites_list li.favorite div.surface span,
+#report_list ul.reports_list li.report div.surface span,
+#report_list ul.reports_list li.favorite div.surface span {cursor: pointer;}
+
+#report_list ul.favorites_list li.report div.label,
+#report_list ul.favorites_list li.favorite div.label,
+#report_list ul.reports_list li.report div.label,
+#report_list ul.reports_list li.favorite div.label {
+    position: absolute; top: 0; right: 20px;
+    padding: 3px 6px;
+    background-color: White; color: Black; font-weight: bold;
+    border: 1px solid silver;
+}
+
+div#favorites_list {
+    padding: 10px;
+    background-color: White;
+}
+
+.instructional_notice {
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid silver;
+    background-color: #D5EEFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.instructional_notice p {font-size: 1.25em; font-weight: bold; margin-bottom: 0;}
+
+.instructional_notice .icon_image {
+    float: left; margin-right: 10px;
+}
+
+
+
+
+body {
+    margin-bottom: 0 !important;
+}
+
+#application_footer {
+    margin-top: 10px;
+}
+
+
+
+
+

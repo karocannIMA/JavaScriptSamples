@@ -1,0 +1,135 @@
+﻿/*
+base.css
+==================================================================================
+Contains many defaults like reset code, font styles, styling for base elements, etc...
+----------------------------------------------------------------------------------
+*/
+
+/*
+Reset code to give us a clean canvas to work on
+------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';  content: none;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate;  border-spacing: 0;}
+table th {text-align: left;}
+
+
+
+/*
+Basic styles
+------------------------------------------------------------------------------- */
+
+/*
+base font style. specifications in EMs will derive their width from this as a 
+specific pixel approximation.
+*/
+
+html, body {
+	font-size: 10px;
+	font-family: verdana;
+}
+
+
+/* Some handy utility elements */
+
+.clearthis {clear:both;}
+.clear_this {clear:both;}
+.clearboth {clear:both;}
+
+.floatleft {float:left;}
+.floatright {float:right;}
+
+
+/* Stylize some standard tags (note, all form related styles are in forms.css) */
+
+p, span {
+	font-size: 1em;
+}
+
+p {margin-bottom: 1em;}
+
+p.error-text {
+	font-weight: bold;
+	color: red;
+}
+
+/* The fix below is used to rid IE of some display bugs that you can encounter
+   when you have an element that contains nodes which are floated.  Fixes margin
+   errors, background problems and annoying things.  Works for IE6 & 7 */
+
+/* Hides from IE5-mac \*/
+* html form,
+* html .button_row,
+* html .iefloatfix {height: 1%;}
+form,
+.button_row,
+.iefloatfix {zoom: 1;}
+/* End hide from IE5-mac */ 
+
+
+/*
+ Baisc form styles
+------------------------------------------------------------------------------- */
+
+form {overflow: auto;}
+form fieldset {position: relative;  border: 0;}
+form p {margin-bottom: 0px;}
+
+label,
+input,
+select,
+textarea {font-size: 1em;  font-family: verdana;}
+
+/* Some reset code for checkboxes to ensure consistency across all browsers (alignment issues) */
+
+input[type=radio],
+input[type=checkbox] {width: 13px;  height: 13px;  padding: 0;  margin: 0;}
+
+/* Add a dotted line to elements that are currently focused. */
+
+input[type=text]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
+input[type=password]:focus,
+select:focus,
+textarea:focus {outline: 1px dotted blue;}
+
+/* Change the cursor to the pointer for labels, checkboxes and buttons to indicate that things are interactive */
+
+label:hover,
+input[type=checkbox]:hover,
+input[type=radio]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+input[type=button]:hover {cursor: pointer;}

@@ -1,0 +1,35 @@
+﻿/*
+Child.css
+==================================================================================
+Contains all styles specific to the child form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#child_information_panel {z-index: 2;}
+
+
+#child_information_panel .record_summary .summary_header .record_name 
+{
+    max-width: 300px;
+    /*max-height: 2em;*/
+    overflow: hidden;
+}
+
+#child_information_panel .record_summary .notification
+{
+    background-color:  #FFF200;
+}
+
+ #child_information_panel .record_summary .notification ul.last
+ {
+    width: 900px;
+    /*color:blue;
+    outline:#00FF00 dotted thick;*/
+ }  
+ 
+ #child_information_panel .record_summary .notification ul.last li
+ {
+    margin-top:5px;
+   margin-left: 20px;
+   padding-bottom: 20px;
+ } 

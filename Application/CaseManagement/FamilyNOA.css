@@ -1,0 +1,189 @@
+﻿/*
+FamilyNOA.css
+==================================================================================
+Contains all styles specific to the family NOA form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#family_NOA_details .validation_error {display:none;} /*We need to take care of this in a better way we added this as an emergency*/
+textarea {border:none;}
+#family_NOA .fbold {font-weight:bold;}
+#family_NOA  td:hover .toggle_button {background-image: url(../../../images/toggle_arrows.png);}
+/* #family_NOA  tr:hover > td {background-color: #D5EEFF;} */
+#family_NOA  td.selected .toggle_button {background-position: 0 0;  background-image: url(../../../images/toggle_arrows.png) !important;}
+.toggle_button {
+	width: 24px;  height: 16px;
+	background-position: 0 -16px;
+	background-image: url(../../../images/toggle_arrows_small.png);
+}
+
+
+
+#family_NOA .schedule_row  tr:hover > td {background-color: #D5EEFF;}
+#family_NOA div.schedule_row {display: none;}
+#family_NOA_details {padding-left:05px;}
+
+
+#family_NOA_details td  {padding-top:1px; padding-bottom:1px;}
+.box 
+{
+ width: 99%; 
+ height:93%;  
+ overflow: auto;  
+ position: relative;
+ background-color:inherit;
+ border-width:1px; 
+ border-style:inset;
+ border-color:inherit;
+ margin-left:1px;
+ margin-top:1px;
+ } 
+.boxheader {
+     color:white; 
+     background-color:#616D7E; 
+     padding-left:2px; 
+     padding-top:2px; 
+     padding-bottom:2px; 
+     font-size:12px;
+}  
+
+  
+
+
+#family_NOA_details #NOA_fields .checkbox input  {width:20px;}
+#family_NOA_details #NOA_fields select  {width:75px;}
+#family_NOA_details #NOA_fields input  {width:95px; border:none;}
+
+
+
+#family_NOA_details #NOA_fields
+{
+background-color: White;
+border: White 1px solid;
+color: Black;
+cursor:auto; 
+} 
+
+#family_NOA_details label {width: auto !important; line-height: 1.25em; margin-right: 10px;}
+
+#family_NOA_details .column_row .three_columnsC1 {width: 40%;  float: left;  position: relative;}
+#family_NOA_details .column_row .three_columnsC2 {width: 30%;  float: left;  position: relative;}
+#family_NOA_details .column_row .three_columnsC3 {width: 30%;  float: left;  position: relative;}
+
+#family_NOA_details .column_row .two_columnsC1 {width: 40%;  float: left;  position: relative; }
+#family_NOA_details .column_row .two_columnsC2 {width: 60%;  float: left;  position: relative;}
+
+#family_NOA_details .column_row .two_columnsM {width: 50%;  float: left;  position: relative; }
+
+#family_NOA_details .column_row  p {
+	position: relative;  overflow: auto;
+	padding: 1px;  margin: 0;  padding-right: 5px;
+}
+
+#family_NOA_details .column_row fieldset legend {font-size: 1em;  font-weight: bold;  margin-bottom: 1em;}
+
+/*#family_NOA_details .column_row  .three_columnsC2 label.actionDescription{
+	position: relative;  overflow: auto;
+	padding: 1px;  margin: 0px;  padding-right: 2px;
+	color:Fuchsia;
+}*/
+#family_NOA_details .column_row  .three_columnsC2 table.actions td { width:450px;}
+
+/*#family_NOA_details #top_section #NOA_Date_Address_info{ border: 1px #F00 solid;}*/
+#family_NOA_details #top_section #Actions{border: 2px solid lightgray; padding-bottom:5px; width:280px; margin-left: -20px;}
+#family_NOA_details #top_section #Methods{border: 2px solid lightgray; padding-bottom:3px; width:250px; margin-left: 10px;}
+#family_NOA_details #middle_section #TypeOfChangeGroup{border: 2px solid lightgray; margin-left:-110px; width:280px;}
+#family_NOA_details #middle_section #CopyTemplate{margin-top:10px; width:800px;}
+
+
+
+
+#family_NOA_details #ID {margin-left:21px; width:60px;}
+#family_NOA_details #FamilyID {margin-left:8px; width:60px;}
+#family_NOA_details p.FamilyID{margin-bottom:10px;}
+#family_NOA_details p.SpanishNOA{margin-bottom:10px;}
+#family_NOA_details #SpanishNOA {margin-left:-30px; border: 1px #F00 solid;}
+#family_NOA_details #Printed {margin-left:-30px;}
+#family_NOA_details #top_section #NOA_Date_Address_info #SpanishNOALbl{margin-left:-20px; }
+#family_NOA_details #top_section #NOA_Date_Address_info #PrintedLbl{margin-left:-20px; }
+#family_NOA_details #top_section #NOA_Date_Address_info p.OtherChildCareReceipts{margin-left:-40px; margin-top:10px;}
+#family_NOA_details #top_section #NOA_Date_Address_info #OtherChildCareReceiptsLbl{margin-left:-30px; }
+
+
+#family_NOA_details #NOADate {margin-left:20px;}
+#family_NOA_details #EffectiveDate {margin-left:-1px;}
+#family_NOA_details #AppealDate {margin-left:8px;}
+#family_NOA_details #FamilyNOATypeID {margin-left:19px; width:86px;}
+#family_NOA_details #PrintAddress {margin-left:1px; width:86px;}
+#family_NOA_details #FirstPageOnly {margin-left:-50px;}
+#family_NOA_details #top_section #NOA_Date_Address_info #FirstPageOnlyLbl{margin-left:-40px;}
+
+#family_NOA_details #top_section #Methods #Mailed{ width: 10px!important; margin-left:10px;}
+#family_NOA_details #top_section #Methods #Given{ width: 10px!important; margin-left:10px;}
+#family_NOA_details #top_section #Methods #CertifiedMail{ width: 10px!important; margin-left:10px;}
+#family_NOA_details #top_section #Methods #OtherDistribution{ width: 10px!important; margin-left:10px;}
+#family_NOA_details #top_section #Methods #MailedLbl{margin-left:20px;}
+#family_NOA_details #top_section #Methods #GivenLbl{margin-left:20px; }
+#family_NOA_details #top_section #Methods #CertifiedMailLbl{margin-left:20px;}
+#family_NOA_details #top_section #Methods #OtherDistributionLbl{margin-left:20px; }
+
+#family_NOA_details #top_section #Methods p.GiveDate, 
+#family_NOA_details #top_section #Methods p.methodOtherTextbox, 
+#family_NOA_details #top_section #Methods p.TrackingNumber {margin-left:20px;} 
+#family_NOA_details #GiveDate {margin-left:33px; }
+#family_NOA_details #OtherDistributionDesc {margin-left:59px; width:80px;}
+#family_NOA_details #TrackingNumber {width:80px;}
+
+#family_NOA_details #NOAText {height:90px; width:610px;}
+#family_NOA_details #FamilyNOARequiredDocuments {width:300px;}
+#family_NOA_details #NOAText2 {height:60px; width:450px;}
+#family_NOA_details #NOAText3 {height:60px;width:450px;}
+#family_NOA_details #ActionJustification {width:300px;}
+#family_NOA_details #HoursText {width:300px;}
+#family_NOA_details #OtherText {width:300px;}
+
+/*#family_NOA_details #Denied {margin-left:14px; }
+#family_NOA_details #Recertification {margin-left:18px; }
+#family_NOA_details #Change {margin-left:5px; }
+#family_NOA_details #DelinquentFee {margin-left:33px; }
+#family_NOA_details #Ineligibility {margin-left:51px; }
+#family_NOA_details #ReqChange {margin-left:38px; }*/
+
+#family_NOA_details #middle_section p.Specialist{margin-top:20px;}
+#family_NOA_details #SpecialistID {margin-left:8px; width:150px;}
+#family_NOA_details #CreatedBy {width:60px; margin-left:20px;}
+#family_NOA_details #CopyFrom  {width:245px;}
+#family_NOA_details #CopyToList {margin-left:10px; width:245px;}
+
+#family_NOA_details #NOA_fields #TypeOfChangeOtherDescription {width:125px;}
+
+#family_NOA_details #NOA_fields #GradesReceived {width:50px;}
+#family_NOA_details #StartDate {width:115px; }
+#family_NOA_details #StopDate {width:115px;}
+
+
+#lower_fields #FamilyNOARequiredDocuments {width:255px;}
+#family_NOA_details #bottom_section #FamilyNOARequiredDocuments{width:250px; margin-left:10px;}
+#family_NOA_details #bottom_section #SelectedDocumentsLbl{margin-left:10px;}
+
+
+
+#NOA_schedule_list .SchedDays {padding-right:3px}
+#NOA_schedule_list #DaysSun {margin-left:-10px}
+#NOA_schedule_list #DaysSat {margin-left:4px}
+
+
+
+
+#weekdaybox .td {padding-right:15px}
+
+
+/*
+Report frame formatting
+------------------------------------------------------------------------------- */
+
+#report_frame_template {display: none;}
+#report_frame {position: relative; width: 100%; height: 100%;}
+#report_frame iframe,
+#report_frame .loading_container {width: 100%; height: 488px;}
+#report_frame .loading_container {position: absolute; top: 0; left: 0;}

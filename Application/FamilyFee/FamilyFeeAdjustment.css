@@ -1,0 +1,19 @@
+﻿/*
+ScheduleEnrollment.css
+==================================================================================
+All the styles that apply to the schedule enrollment controller actions.
+Shamelessly lifted and adapted from the home controller CSS.
+----------------------------------------------------------------------------------
+*/
+/* Specific line and text formatting */
+
+#family_fee_queue_detail_panel tr.dividing_row td {border-top: 1px solid black; border-bottom: 2px solid black;}
+#family_fee_queue_detail_panel tr.totals_row td {border-bottom: 1px solid black;}
+.RMR {color: Red;}
+
+.queue_content {
+    position: relative;
+    display: none;
+}
+
+.hidden_fields {display: none;}

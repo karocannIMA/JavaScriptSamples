@@ -1,0 +1,594 @@
+﻿/*
+ui.css
+==================================================================================
+Contains all styles for HTMLHelper extension methods.
+----------------------------------------------------------------------------------
+*/
+
+
+
+.UI_tabular_fields {
+    width: 100%;
+}
+
+.UI_tabular_fields th,
+.UI_tabular_fields td {
+    padding: 2px;
+}
+
+
+
+
+/*
+.html_button
+------------------------------------------------------------------------------- */
+
+.html_button {position: relative;  display: block;  overflow: hidden;  float: left; padding-left: 10px;}
+.html_button input {display: block;  position: absolute;  top: 0;  left: 0;  width: 100%;  height: 100%;}
+.html_button_link {
+	position: relative;  display: block;  overflow: hidden;  float: left;
+	padding-left: 10px;  background: url(../images/ui/button_white_left.png) top left no-repeat;
+	text-decoration: none;  color: Black;  cursor: pointer !important;
+}
+
+.html_button .inner_content,
+.html_button_link .inner_content {float: left;  height: 31px;}
+
+.html_button .inner_content *,
+.html_button_link .inner_content * {display: block;  float: left;}
+
+.html_button span.label,
+.html_button_link span.label {height: 31px;  line-height: 31px;  padding-right: 12px;  font-weight: bold;  font-size: 1.1em;}
+
+.html_button img,
+.html_button_link img {width: 16px; height: 16px; padding-top: 7px;  margin-right: 5px;}
+
+.html_button img.icon_image,
+.html_button_link img.icon_image {width: 16px; height: 16px; margin-top: 7px;  padding: 0 !important; margin-right: 5px;}
+
+/* Color classes.  These dictate which background color will be used */
+
+.html_button_white {background: url(../images/ui/button_white_left.png) top left no-repeat; }
+.html_button_white .inner_content {background: url(../images/ui/button_white_right.png) top right no-repeat;}
+
+.html_button_blue {background: url(../images/ui/button_blue_left.png) top left no-repeat; }
+.html_button_blue .inner_content {background: url(../images/ui/button_blue_right.png) top right no-repeat;}
+
+.html_button_orange,
+.html_button_selected {background: url(../images/ui/button_orange_left.png) top left no-repeat; }
+.html_button_orange .inner_content,
+.html_button_selected .inner_content {background: url(../images/ui/button_orange_right.png) top right no-repeat;}
+
+
+/*
+.html_dialog
+------------------------------------------------------------------------------- */
+
+/*
+html_dialog's look just like html_labels, except they can be set to heights
+greater than a single line and can grow multiple lines.  Their html implementation
+is different too, requiring more css.
+*/
+
+.html_dialog {
+	position: relative;
+	min-height: 31px;
+}
+
+.html_dialog .html_dialog_surface {
+	background: url(../images/ui/dialog_top_left.png) top left no-repeat;
+}
+
+.html_dialog .html_dialog_outercontainer {
+	margin-left: 10px;  padding-top: 10px;
+	background: url(../images/ui/dialog_top_right.png) top right no-repeat;
+}
+
+.html_dialog .html_dialog_innercontainer {
+	margin-left: -10px;  padding-left: 10px;
+	background: url(../images/ui/dialog_bottom_left.png) bottom left no-repeat;
+}
+
+.html_dialog .html_dialog_content {
+	padding-bottom: 10px;  padding-right: 10px;
+	background: url(../images/ui/dialog_bottom_right.png) bottom right no-repeat;
+}
+
+.html_dialog .html_dialog_divider {
+    height: 1px;  margin: .5em 0;
+    background-color: Silver;
+}
+
+
+/* html_dialog_fixed */
+
+.html_dialog_fixed .html_dialog_surface {position: absolute;  top: 0;  right: 0;  bottom: 0;  left: 0;}
+.html_dialog_fixed .html_dialog_outercontainer {position: absolute;  top: 0;  right: 0;  bottom: 0;  left: 0;}
+.html_dialog_fixed .html_dialog_innercontainer {position: absolute;  top: 10px;  right: 0;  bottom: 0;  left: 0;  height: auto;}
+.html_dialog_fixed .html_dialog_content {position: absolute;  top: 0;  right: 0;  bottom: 0;  left: 10px;  height: auto;}
+
+/* .html_dialog_shadow */
+
+.html_dialog_shadow .html_dialog_surface {
+	background: url(../images/ui/dialog_top_left_shadow.png) top left no-repeat;
+}
+
+.html_dialog_shadow .html_dialog_outercontainer {
+	margin-left: 14px;  padding-top: 14px;
+	background: url(../images/ui/dialog_top_right_shadow.png) top right no-repeat;
+}
+
+.html_dialog_shadow .html_dialog_innercontainer {
+	margin-left: -14px; padding-left: 14px;
+	background: url(../images/ui/dialog_bottom_left_shadow.png) bottom left no-repeat;
+}
+
+.html_dialog_shadow .html_dialog_content {
+	padding-bottom: 18px;  padding-right: 18px;
+	background: url(../images/ui/dialog_bottom_right_shadow.png) bottom right no-repeat;
+}
+
+/* .html_toggle_dialog */
+
+.html_expandable_dialog .html_dialog_content .panel {
+    overflow: auto;  padding: 2px 2px 2px 32px; 
+    cursor: pointer;
+}
+
+.html_expandable_dialog .html_dialog_content .selected_panel,
+.html_expandable_dialog .html_dialog_content .panel:hover {background-color: #D6EFFF;}
+.html_expandable_dialog .html_dialog_content .content {display: none;}
+
+.html_expandable_dialog .html_dialog_content .toggle_button {
+    position: absolute;  top: 12px; left: 12px;
+	width: 24px;  height: 16px;
+	background-position: 0 -16px;
+	background-image: url(../images/toggle_arrows_small.png);
+}
+
+.html_expandable_dialog .html_dialog_content .selected_panel .toggle_button {
+	background-position: 0 0;
+}
+
+.html_dialog .html_dialog_divider {
+    display: none;
+}
+
+
+
+
+/*
+.html_label
+------------------------------------------------------------------------------- */
+
+/*
+html_label's are are to be used for small, one-line messages which are rendered
+as one-line dialogs.
+*/
+
+.html_label {
+	position: relative;
+	padding-left: 10px;
+	overflow: visible;
+	height:auto;
+	clear: both;
+}
+
+.html_label .html_label_surface {
+	position: relative;
+	height: 21px;
+	padding: 5px 10px 5px 0;
+	line-height: 21px;
+	font-size: 1em;
+}
+
+.html_label .html_label_surface img.icon {float: left;  margin: 3px 5px 0 0;}
+
+.html_label_white {background: url(../images/ui/label_white_left.png) top left no-repeat;}
+.html_label_white .html_label_surface {background: url(../images/ui/label_white_right.png) top right no-repeat;}
+
+.html_label_orange {background: url(../images/ui/label_orange_left.png) top left no-repeat;}
+.html_label_orange .html_label_surface {background: url(../images/ui/label_orange_right.png) top right no-repeat;}
+
+.html_label_lightblue {background: url(../images/ui/label_lightblue_left.png) top left no-repeat;}
+.html_label_lightblue .html_label_surface {background: url(../images/ui/label_lightblue_right.png) top right no-repeat;}
+
+.html_label_yellow {background: url(../images/ui/label_yellow_left.png) top left no-repeat;}
+.html_label_yellow .html_label_surface {background: url(../images/ui/label_yellow_right.png) top right no-repeat;}
+
+
+/*----------------------------------TESTING --------------------------------------------------------*/
+.html_label_pink {background: url(../images/ui/label_pink_left.png) top left no-repeat;}
+.html_label_pink .html_label_surface {background: url(../images/ui/label_pink_right.png) top right no-repeat;}
+
+.html_label_red {background: url(../images/ui/label_red_left.png) top left no-repeat;}
+.html_label_red .html_label_surface {background: url(../images/ui/label_red_right.png) top right no-repeat;}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.html_label img.close_icon {display: block; float: right;  margin: 2px 0 0 0;}
+.html_label img.close_icon:hover {cursor: pointer;}
+
+
+
+/*
+.html_panel
+------------------------------------------------------------------------------- */
+
+.html_panel {margin-bottom: 10px;}
+.html_panel, .html_panel_shadow {position: relative;}
+
+
+/* Panel title formatting */
+
+.html_panel > h3,
+.html_panel_shadow > h3 {
+	height: 33px;  line-height: 36px;  vertical-align: middle;  padding-left: 14px;
+	font-size: 1.3em;  color: white;  font-weight: bold;
+}
+
+.html_panel > h3.html_panel_yellow, .html_panel_shadow h3.html_panel_yellow {color: Black !important;}
+
+.html_panel > h3 img,
+.html_panel_shadow > h3 img {float: left;  margin: 11px 8px 0 0;}
+
+/* Panel widths */
+
+.html_panel_width_100 {width: 960px !important;}
+.html_panel_width_80 {width: 768px !important;}
+.html_panel_width_66 {width: 630px !important;}
+.html_panel_width_50 {width: 475px !important;}
+.html_panel_width_33 {width: 320px !important;}
+
+.html_panel_shadow_width_100 {width: 964px !important;}
+.html_panel_shadow_width_80 {width: 772px !important;}
+.html_panel_shadow_width_66 {width: 634px !important;}
+.html_panel_shadow_width_50 {width: 479px !important;}
+.html_panel_shadow_width_33 {width: 324px !important;}
+
+/* Panel title width-based image designations */
+
+.html_panel_width_100 > h3, .html_panel_shadow_width_100 > h3 {background: url(../images/ui/panel_title_100.png) no-repeat;}
+.html_panel_width_80 > h3, .html_panel_shadow_width_80 > h3 {background: url(../images/ui/panel_title_80.png) no-repeat;}
+.html_panel_width_66 > h3, .html_panel_shadow_width_66 > h3 {background: url(../images/ui/panel_title_66.png) no-repeat;}
+.html_panel_width_50 > h3, .html_panel_shadow_width_50 > h3 {background: url(../images/ui/panel_title_50.png) no-repeat;}
+.html_panel_width_33 > h3, .html_panel_shadow_width_33 > h3 {background: url(../images/ui/panel_title_33.png) no-repeat;}
+
+/* Colors */
+
+.html_panel > h3.html_panel_blue {background-position: left 0px;}
+.html_panel > h3.html_panel_green {background-position: left -33px;}
+.html_panel > h3.html_panel_purple {background-position: left -66px;}
+.html_panel > h3.html_panel_orange {background-position: left -99px;}
+.html_panel > h3.html_panel_yellow {background-position: left -132px;}
+
+.html_panel_shadow > h3.html_panel_blue {background-position: right 0px;}
+.html_panel_shadow > h3.html_panel_green {background-position: right -33px;}
+.html_panel_shadow > h3.html_panel_purple {background-position: right -66px;}
+.html_panel_shadow > h3.html_panel_orange {background-position: right -99px;}
+.html_panel_shadow > h3.html_panel_yellow {background-position: right -132px;}
+
+/* Panel body width-based image designations */
+
+.html_panel_width_100 .html_panel_content, .html_panel_shadow_width_100 .html_panel_content {background: url(../images/ui/panel_body_gray_100.png) bottom left no-repeat; }
+
+.html_panel_width_80 .html_panel_content, .html_panel_shadow_width_80 .html_panel_content {background: url(../images/ui/panel_body_gray_80.png) bottom left no-repeat;}
+.html_panel_width_66 .html_panel_content, .html_panel_shadow_width_66 .html_panel_content {background: url(../images/ui/panel_body_gray_66.png) bottom left no-repeat;}
+.html_panel_width_50 .html_panel_content, .html_panel_shadow_width_50 .html_panel_content {background: url(../images/ui/panel_body_gray_50.png) bottom left no-repeat;}
+.html_panel_width_33 .html_panel_content, .html_panel_shadow_width_33 .html_panel_content {background: url(../images/ui/panel_body_gray_33.png) bottom left no-repeat;}
+
+.html_panel_shadow .html_panel_content {background-position: bottom right;}
+
+/* Panel content padding */
+
+.html_panel .html_panel_content,
+.html_panel_shadow .html_panel_content {position: relative;  overflow: visible;}
+
+.html_panel .html_panel_content {padding: 10px 14px 14px 14px;}
+.html_panel_shadow .html_panel_content {padding: 10px 18px 18px 14px;}
+
+/* Adjust Arrows for paging/sliding panel */
+.html_panel .html_panel_slide_toggle_content{min-height: 20px!important}
+.html_panel .html_panel_content > .html_panel_content_left_arrow img{float:left;}
+.html_panel .html_panel_content > .html_panel_content_right_arrow img{float:right}
+
+/* Fixed height settings */
+
+.html_panel .html_panel_fixed_height,
+.html_panel_shadow .html_panel_fixed_height {position: absolute !important;  top: 33px;  bottom: 0;  left: 0;  right: 0;}
+
+.html_panel .scroll,
+.html_panel_shadow .scroll {
+    overflow: auto;  position: relative;
+    
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -o-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -o-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Drag functionality for popups */
+
+.html_panel_shadow h3 {
+    cursor: move;
+}
+
+
+
+
+/*
+.html_plain_panel
+------------------------------------------------------------------------------- */
+
+.html_plain_panel_blue,
+.html_plain_panel_blue_shadow,
+.html_plain_panel_gray,
+.html_plain_panel_gray_shadow {position: relative;  min-height: 31px;}
+
+.html_plain_panel_blue .html_plain_panel_surface,
+.html_plain_panel_gray .html_plain_panel_surface {padding-right: 10px;}
+.html_plain_panel_blue .html_plain_panel_surface {background: url(../images/ui/panel_blue_top_right.png) top right no-repeat;}
+.html_plain_panel_gray .html_plain_panel_surface {background: url(../images/ui/panel_gray_top_right.png) top right no-repeat;}
+
+.html_plain_panel_blue .html_plain_panel_outer_container,
+.html_plain_panel_gray .html_plain_panel_outer_container {padding-top: 10px;}
+.html_plain_panel_blue .html_plain_panel_outer_container {background: url(../images/ui/panel_blue_top_left.png) top left no-repeat;}
+.html_plain_panel_gray .html_plain_panel_outer_container {background: url(../images/ui/panel_gray_top_left.png) top left no-repeat;}
+
+.html_plain_panel_blue .html_plain_panel_inner_container,
+.html_plain_panel_gray .html_plain_panel_inner_container {margin-right: -10px;  padding-right: 10px;}
+.html_plain_panel_blue .html_plain_panel_inner_container {background: url(../images/ui/panel_blue_bottom_right.png) bottom right no-repeat;}
+.html_plain_panel_gray .html_plain_panel_inner_container {background: url(../images/ui/panel_gray_bottom_right.png) bottom right no-repeat;}
+
+.html_plain_panel_blue .html_plain_panel_content,
+.html_plain_panel_gray .html_plain_panel_content {padding-bottom: 10px;  padding-left: 10px;}
+.html_plain_panel_blue .html_plain_panel_content {background: url(../images/ui/panel_blue_bottom_left.png) bottom left no-repeat;}
+.html_plain_panel_gray .html_plain_panel_content {background: url(../images/ui/panel_gray_bottom_left.png) bottom left no-repeat;}
+
+/* .html_plain_panel shadowed version */
+
+.html_plain_panel_blue_shadow,
+.html_plain_panel_gray_shadow {position: relative;  min-height: 35px;}
+
+.html_plain_panel_blue_shadow .html_plain_panel_surface,
+.html_plain_panel_gray_shadow .html_plain_panel_surface {padding-right: 14px;}
+.html_plain_panel_blue_shadow .html_plain_panel_surface {background: url(../images/ui/panel_blue_top_right_shadow.png) top right no-repeat;}
+.html_plain_panel_gray_shadow .html_plain_panel_surface {background: url(../images/ui/panel_gray_top_right_shadow.png) top right no-repeat;}
+
+.html_plain_panel_blue_shadow .html_plain_panel_outer_container,
+.html_plain_panel_gray_shadow .html_plain_panel_outer_container {padding-top: 10px;}
+.html_plain_panel_blue_shadow .html_plain_panel_outer_container {background: url(../images/ui/panel_blue_top_left.png) top left no-repeat;}
+.html_plain_panel_gray_shadow .html_plain_panel_outer_container {background: url(../images/ui/panel_gray_top_left.png) top left no-repeat;}
+
+.html_plain_panel_blue_shadow .html_plain_panel_inner_container,
+.html_plain_panel_gray_shadow .html_plain_panel_inner_container {margin-right: -14px;  padding-right: 14px;}
+.html_plain_panel_blue_shadow .html_plain_panel_inner_container {background: url(../images/ui/panel_blue_bottom_right_shadow.png) bottom right no-repeat;}
+.html_plain_panel_gray_shadow .html_plain_panel_inner_container {background: url(../images/ui/panel_gray_bottom_right_shadow.png) bottom right no-repeat;}
+
+.html_plain_panel_blue_shadow .html_plain_panel_content,
+.html_plain_panel_gray_shadow .html_plain_panel_content {padding-bottom: 14px;  padding-left: 10px;}
+.html_plain_panel_blue_shadow .html_plain_panel_content {background: url(../images/ui/panel_blue_bottom_left_shadow.png) bottom left no-repeat;}
+.html_plain_panel_gray_shadow .html_plain_panel_content {background: url(../images/ui/panel_gray_bottom_left_shadow.png) bottom left no-repeat;}
+
+
+/*
+Lightbox
+------------------------------------------------------------------------------- */
+
+.lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.35;
+	opacity:.35;
+	filter: alpha(opacity=35);
+}
+
+
+/*
+Loading
+------------------------------------------------------------------------------- */
+
+#application_loader_lightbox {
+    position: absolute; z-index: 2001;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: White;
+	-moz-opacity: 0.40;
+	opacity:.40;
+	filter: alpha(opacity=40);
+}
+
+#application_loading_message {
+    position: absolute; z-index: 2002;
+    top: 30%; left: 40%; width: 20%;
+	padding: 10px;  background-color: white;
+	font-size: 12pt;  font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#application_loading_message div.status {
+    margin-top: 20px;
+    font-size: 10pt;
+}
+
+
+
+.loading_background {
+	position: absolute;
+	top: 0;  right: 0;  bottom: 0;  left: 0;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.35;
+	opacity:.35;
+	filter: alpha(opacity=35);
+}
+
+.loading_message {
+	position: absolute;  top: 5px;  left: 5px;
+	z-index:1002;
+	padding: 10px;  background-color: white;
+	font-size: 10pt;  font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.loading_message img {padding-right: 10px;}
+
+
+/*
+Loading
+------------------------------------------------------------------------------- */
+
+.editing_disabled {
+	position: absolute;
+	top: 0;  right: 0;  bottom: 0;  left: 0;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.35;
+	opacity:.35;
+	filter: alpha(opacity=35);
+	display: none;
+}
+
+.editing_disabled_message {
+	position: absolute;  top: 5px;  left: 5px;
+	z-index:1002;
+	padding: 5px;  background-color: white;
+	font-size: 10pt;  font-weight: bold;
+	display: none;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid black;
+}
+
+
+
+
+/*
+Navigation-Rollup Bar
+----------------------------------------------------------------------------------
+CSS Code for the navigation roll up bar.  This widget can be used to construct
+a navigation bar to hold a large number of links.  There is a rollup that users
+can click on that will show the entire list of links in a vertical drop-down
+set in a smaller font size.
+*/
+
+.navigation_rollup {
+	clear: both;
+	position: relative;  overflow: visible;  height: 31px;  margin-left: -10px;  margin-right: -9px;
+}
+
+.navigation_rollup ul.bar {
+	position: absolute;
+	top: 0;  left: 0;  width: 100%;  height: 31px;
+	background-color: gray;
+}
+
+.navigation_rollup ul.rollup {
+    opacity: 0.4;
+    border: 1px solid red;
+	position: relative;
+	display: none;
+	width: 200px;  position: absolute;  top: 31px;  right: 0;
+	background-color: gray;
+}
+
+.navigation_rollup .html_button {position: absolute;  top: 0;  right: 10px;  background-color: #808080;}
+
+.navigation_rollup ul.bar li,
+.navigation_rollup ul.rollup li {display: block;  float: left;}
+
+.navigation_rollup ul.bar li a,
+.navigation_rollup ul.rollup li a {display: block;  color: white;  text-decoration: none;  font-weight: bold;}
+
+.navigation_rollup ul.bar li a {padding: 10px 8px;  font-size: 1.1em;}
+.navigation_rollup ul.rollup li a {padding: 5px 9px;  font-size: 1.1em;}
+
+.navigation_rollup ul.bar li a:hover,
+.navigation_rollup ul.bar li a.current,
+.navigation_rollup ul.rollup li a:hover,
+.navigation_rollup ul.rollup li a.current {background-color: Silver;  color: Black;}
+
+.navigation_rollup ul.rollup li {width: 100%;}
+
+
+
+
+/*
+Subform Navigation
+----------------------------------------------------------------------------------
+New CSS code for the subform navigation.  This is loosely based on the navigation
+roll-up bar, but it's been stripped down to pretty much just the single button
+with a drop down.
+*/
+
+.subform_navigation {
+	clear: both;  overflow: visible; height: 31px; z-index: 9999;
+	position: absolute; top: 3px; right: 15px;
+}
+
+.button_navigation {
+	clear: both;  overflow: visible; height: 31px; z-index: 9999;
+	position: relative;
+}
+
+.subform_navigation ul.dropdown {
+	position: relative;
+	display: none;
+	width: 200px;  position: absolute;  top: 31px;  right: 0;
+	
+	border: 5px solid #525552;
+	-moz-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+	
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.subform_navigation ul.dropdown li {
+    display: block;  float: left;
+}
+
+.subform_navigation ul.dropdown li a {
+    display: block;  color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+	background-color: gray;
+    padding: 5px 9px;
+	-moz-opacity: 0.9;
+	opacity: .9;
+	filter: alpha(opacity=90);
+}
+
+.subform_navigation ul.dropdown li a:hover,
+.subform_navigation ul.dropdown li a.current {
+    color: Black;
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.subform_navigation ul.dropdown li a:hover{
+    background-color: Silver;
+}
+.subform_navigation ul.dropdown li a.current {
+    background-color: #D6EFFF;
+}
+
+.subform_navigation ul.dropdown li {width: 100%;}
+
+

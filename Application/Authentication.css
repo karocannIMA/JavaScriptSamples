@@ -1,0 +1,85 @@
+﻿/*
+Authentication.css
+==================================================================================
+Page, layout and form styles for the login page.
+----------------------------------------------------------------------------------
+*/
+
+
+/*
+Page style, logo and version no. */
+
+body {
+	margin: 2em 1em 0;
+}
+
+img.logo {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+img.walking_graphic {
+	display: block;
+	margin: 20px auto;
+}
+
+
+/*
+login panel styling */
+
+#login_panel {margin: 0 auto;}
+#login_panel h3 {text-align: center;}
+
+
+.login_error {
+    color: Red;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.login_error .continuation_message {
+    color: black !important;
+    font-weight: normal !important;
+}
+
+
+/*
+Page layout and formatting styles */
+
+#agency_login {
+	position: relative;
+	overflow: hidden;
+}
+
+#agency_login #login_form {float: left;  width: 20em;}
+#agency_login #login_form label {font-weight: bold;  display: block;  line-height: 16px;}
+#agency_login #login_form #username,
+#agency_login #login_form #password {width: 100%;}
+
+#agency_login #login_form .button_row {margin-top: 10px;}
+
+#agency_login #agency_information {margin-left: 22em;}
+#agency_login #agency_information h3 {font-weight: bold;  font-size: 1em;  margin-bottom: .5em;  text-align: left;}
+#agency_login #agency_information dl dt {float: left;  width: 12em;}
+
+#dgi_information {position: relative;  overflow: visible;}
+#dgi_information p {margin: 0;}
+#dgi_information h3 {
+	text-align: center;
+	font-size: 1em;  font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#dgi_information .address {float: left;  width: 20em;}
+#dgi_information .address span {display: block;}
+
+#dgi_information dl.contact {margin-left: 22em;}
+#dgi_information dl.contact dt {float: left;  width: 7em;}
+#dgi_information #license_agreement {margin: 2em 0 0;}
+
+#copyright {margin-top: 1em;  text-align: center;}
+
+.failure {color: Red;}
+
+
+

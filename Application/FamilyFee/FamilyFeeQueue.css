@@ -1,0 +1,69 @@
+﻿/*
+ScheduleEnrollment.css
+==================================================================================
+All the styles that apply to the schedule enrollment controller actions.
+Shamelessly lifted and adapted from the home controller CSS.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Layout of main page parts
+---------------------------------------------------------------------------------- */
+
+#family_fee_queue_detail_panel {margin-right: 330px;  margin-bottom: 0;}
+
+/* Browse database styles
+---------------------------------------------------------------------------------- */
+
+/* Hides and shows forms */
+#family_fee_queue_detail_panel form.shown {display: block;}
+#family_fee_queue_detail_panel form.hidden {display: none;}
+
+/* Row-toggle formatting */
+/*
+#family_fee_queue_detail_panel #family_fee_queue_detail {position: relative;  height: 1%;}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody td .toggle_button {
+	width: 24px;  height: 16px;
+	background-position: 0 -16px;
+	background-image: url(../../../images/toggle_arrows_small.png);
+}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.detail_row > td,
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.selected > td {background-color: #D5EEFF;}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.selected td .toggle_button {background-position: 0 0;  background-image: url(../../../images/toggle_arrows.png) !important;}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.summary_row:hover {cursor: pointer;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.hover > td {background-color: #D5EEFF;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.hover > td .toggle_button {background-image: url(../../../images/toggle_arrows.png);}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.detail_row {display: none;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table tbody tr.show_record {display: table-row !important;}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table td table.detail_data {border-collapse: separate;  width: 100%;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table td table.detail_data th {font-size: 1em;  padding: 6px 9px;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table td table.detail_data th,
+#family_fee_queue_detail_panel #family_fee_queue_detail table td table.detail_data td {border-left: 1px solid #EEEEEE;  border-bottom: 1px solid #EEEEEE;}
+
+#family_fee_queue_detail_panel #family_fee_queue_detail table td.browse_link {white-space: nowrap;  width: 7.5em;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table td.browse_link * {display: block;  float: left;}
+#family_fee_queue_detail_panel #family_fee_queue_detail table td.browse_link a {line-height: 13px;  margin-right: 10px;}
+*/
+
+/* Hides specific trs */
+/*
+#family_fee_queue_detail_panel table tbody tr.detail_row {display: none;}
+*/
+
+/* Specific line and text formatting */
+
+#family_fee_queue_detail_panel tr.dividing_row td {border-top: 1px solid black; border-bottom: 2px solid black;}
+#family_fee_queue_detail_panel tr.totals_row td {border-bottom: 1px solid black;}
+.RMR {color: Red;}
+
+.queue_content {
+    position: relative;
+    display: none;
+}

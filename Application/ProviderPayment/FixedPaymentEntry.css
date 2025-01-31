@@ -1,0 +1,6 @@
+﻿/* Specific styling for the Provider Payment Entry form */
+.fixed_payment_entry_detail_total {text-align:right;}
+#fixed_payment_entry_total {text-align:right; font-weight:bold;}
+
+#FixedPaymentEntryForm fieldset label {font-weight: bold;}
+/*#ProviderID {width: 200px;}*/

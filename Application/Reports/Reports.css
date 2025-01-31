@@ -1,0 +1,28 @@
+﻿/*
+Reports.css
+==================================================================================
+Contains the styles for the report criteria forms.  Individual reports should be
+namespaced with the ID in their own HTML Panels.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/*
+Family report formatting
+------------------------------------------------------------------------------- */
+
+#family_report #print_options * {
+	float: left;
+}
+
+#family_report #print_options fieldset {
+	margin-left: 10px;
+	margin-top: .5em;
+}
+
+
+
+
+
+

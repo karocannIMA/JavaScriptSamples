@@ -1,0 +1,72 @@
+﻿/*
+Schedule.css
+==================================================================================
+Contains all styles specific to the schedule form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#schedule_information_panel {z-index: 2;}
+
+#schedule_information_panel .record_summary .summary_header .button_row{display:block !important}
+
+#schedule_information_panel .record_summary .notification{background-color: #FFEACE;}
+
+#schedule_information_panel .record_summary .notification ul.last {width: 900px;/*color:blue;outline:#00FF00 dotted thick;*/ }  
+ 
+#schedule_information_panel .record_summary .notification ul.last li { margin-top:5px; margin-left: 20px;padding-bottom: 20px;} 
+
+#schedule_information_form .two_thirds .two_thirds label,
+#schedule_information_form .two_thirds .schedule_override label {width: 19.25%;}
+
+#schedule_information_form .two_thirds textarea {width: 79%;}
+
+
+.schedule_detail_time,
+.schedule_detail_hours {width: 5.5em !important;}
+
+.schedule_details td {
+    vertical-align: top !important;
+}
+
+.schedule_details .daily_schedule,
+.schedule_details .meals,
+.schedule_details .child_needs,
+.schedule_details .rate_sheet {
+    border: 1px solid #EFEFEF;
+    margin-bottom: 5px;
+    float: left;
+    width: auto;
+}
+
+.schedule_details .meals {float: right;}
+
+.schedule_details .rate_sheet {margin-right: 5px;}
+
+.schedule_details .daily_schedule th,
+.schedule_details .meals th,
+.schedule_details .child_needs th,
+.schedule_details .rate_sheet th {
+    font-size: 1em;
+}
+
+
+.schedule_column .label_container {
+    clear: both;
+}
+
+.schedule_column strong {
+    float: left;
+    display: block;
+    width: 100px;
+}
+
+.action_buttons{
+    padding-top: 5px;
+}
+
+.schedule_column .inline_fields,
+.rate_column .inline_fields {
+    padding-top: 10px;
+}
+
+#RateTypeID {width: 3.5em;}

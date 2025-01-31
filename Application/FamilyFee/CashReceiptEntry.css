@@ -1,0 +1,108 @@
+﻿/*
+CashReceiptEntry.css
+==================================================================================
+All the styles that apply to the cash receipt entry controller actions.
+Shamelessly lifted and adapted from the home controller CSS.
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Layout of main page parts
+---------------------------------------------------------------------------------- */
+
+#cash_receipt_entry_detail_panel {margin-right: 330px;  margin-bottom: 0;}
+
+#side_panel {position: absolute;  top: 0;  right: 0;  width: 320px;}
+
+.auto_apply {color: Black;}
+
+
+/* Browse database styles
+---------------------------------------------------------------------------------- */
+
+/* Hides and shows forms */
+#cash_receipt_entry_detail_panel form.shown {display: block;}
+#cash_receipt_entry_detail_panel form.hidden {display: none;}
+
+
+
+
+/* Hides specific trs */
+
+#cash_receipt_entry_detail_panel table tbody tr.detail_row {display: none;}
+
+
+/* Paging navigation */
+
+#cash_receipt_entry_detail_panel .paging_navigation {margin: 10px 0 0;}
+
+#cash_receipt_entry_detail_panel .paging_navigation ul {overflow: hidden;  width: 356px;  margin: 0 auto;}
+#cash_receipt_entry_detail_panel .paging_navigation ul * {float: left;}
+
+#cash_receipt_entry_detail_panel .paging_navigation li.back_button {margin-right: 10px;  width: 24px !important;}
+#cash_receipt_entry_detail_panel .paging_navigation li.forward_button {margin-left: 10px;  width: 24px !important;}
+
+#cash_receipt_entry_detail_panel .paging_navigation ul li.page_link a,
+#cash_receipt_entry_detail_panel .paging_navigation ul li.current_page {
+	display: block;
+	width: 30px;  height: 24px;
+	line-height: 24px;  text-align: center;
+	font-size: 1.2em;  font-weight: bold;
+	border: 1px solid transparent;
+}
+
+#cash_receipt_entry_detail_panel .paging_navigation ul li.page_link:hover a,
+#cash_receipt_entry_detail_panel .paging_navigation ul li.current_page {border-color: silver;  background-color: White;}
+
+
+/* Specific line and text formatting */
+
+#cash_receipt_entry_detail_panel tr.dividing_row td {border-top: 1px solid black; border-bottom: 2px solid black;}
+#cash_receipt_entry_detail_panel tr.totals_row td {border-bottom: 1px solid black;}
+
+.hidden_fields {display: none;}
+
+/* Data display */
+.transaction_data {display: none;}
+.cash_receipt_entry_filtered_data {display: none;}
+
+/* footer data */
+.footer_data_right {float:right}
+.footer_data_right td{padding-top:2px;padding-bottom:2px}
+.footer_data_right td.data{text-align:right;padding-left:5px}
+.footer_data_right td.label{text-align:left}
+
+#transaction_amount_remaining,#family_balance,#last_billing_child {font-weight:bold}
+.red {color:red}
+.blue {color:blue}
+
+.footer_data_left {float:left; text-align:left; margin-left: 16px}
+.footer_data_left td{padding-top:2px;padding-bottom:2px}
+.footer_data_left td.data{text-align:left;padding-left:5px}
+.footer_data_left td.label{text-align:left}
+.footer_data_left label.checkbox, .footer_data_center label.checkbox{padding-left:5px}
+.footer_data_left input {vertical-align:middle}
+/*#transaction_amount_remaining_container {line-height: 32px; float: left; margin-left: 16px}*/
+
+.footer_data_center {float:none; text-align:left;}
+
+td.left {text-align:left}
+td.center {text-align:center}
+td.right {text-align:right}
+
+#print_button {padding-right:10px}
+
+label.checkbox {margin-left:3px}
+
+table.next_to_print_button {width:810px}
+
+table.width_full {width:100%}
+table.width_full td {width:50%}
+
+table.right_footer {width:200px}
+table.right_footer td {width:50%}
+
+div.right {float:right}
+
+input.gray {color:Gray}

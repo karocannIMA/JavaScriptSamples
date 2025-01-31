@@ -1,0 +1,74 @@
+﻿/*
+Family.css
+==================================================================================
+Contains all styles specific to the family form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#family_information_panel {z-index: 2;}
+
+#family_information_panel .record_summary .summary_header .record_name 
+{
+
+    max-width: 300px;
+    /*max-height: 2em;*/
+    overflow: hidden;
+}
+
+#family_information_panel .record_summary .notification
+{
+    background-color: #FFEACE;
+}
+
+ #family_information_panel .record_summary .notification ul.last
+ {
+    width: 900px;
+    /*color:blue;
+    outline:#00FF00 dotted thick;*/
+ }  
+ 
+ #family_information_panel .record_summary .notification ul.last li
+ {
+    margin-top:5px;
+   margin-left: 20px;
+   padding-bottom: 20px;
+ }  
+
+
+/* Family Income/Fee styles */
+
+#incomefee_form .column_row .fieldbox {height: 9.5em;}
+    
+#incomefee_form .income_assessment_notice {
+    display: none;
+    border: 1px solid silver;
+    background-color: White;
+    line-height: 1.25em;
+    padding: 5px 10px !important;
+}
+    
+#incomefee_form .effective_dates label {font-weight: bold;}
+    
+#incomefee_form .container_screen {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 1001;
+	background-color: #EFEFEF;
+}
+    
+#incomefee_form .fieldbox .container_screen {top: 30px;}
+    
+#incomefee_form .container_screen_message {
+    position: absolute;
+    top: 17px; left: 16px; right: 16px; bottom: 0;
+    margin-left: -6px;
+    z-index: 1002;
+}
+
+#incomefee_form #family_incomefee .cancel_button {position: absolute;  top: 0;  right: 0;}
+#incomefee_form .effective_dates p {margin-right: 2.5em;}
+
+input.LockedField  
+{
+    background-color: #EFEFEF;
+}

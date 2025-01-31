@@ -1,0 +1,789 @@
+﻿/*
+Sprites.css
+==================================================================================
+Contains all styles for images sprites
+----------------------------------------------------------------------------------
+*/
+
+/*
+Inline action buttons for lists of inline forms
+----------------------------------------------------------------------------------
+*/
+
+.inline_button {
+    font-size: 10px;
+    display: block !important;
+    width: 24px !important; height: 24px !important;
+    background-image: url(../images/buttons/inline_buttons.png);
+    background-repeat: no-repeat;
+}
+
+.inline_button_loading {
+    width: 16px !important;
+    height: 16px !important;
+    padding: 4px;
+    background: url(../images/ajax-loader.gif) 4px 4px no-repeat !important;
+}
+
+.inline_button_add_white {background-position: 0 0;}
+.inline_button_add_yellow {background-position: 0 -24px;}
+.inline_button_add_orange {background-position: 0 -48px;}
+.inline_button_add_blue {background-position: 0 -72px;}
+
+.inline_button_edit_white {background-position: -24px 0;}
+.inline_button_edit_yellow {background-position: -24px -24px;}
+.inline_button_edit_orange {background-position: -24px -48px;}
+.inline_button_edit_blue {background-position: -24px -72px;}
+
+.inline_button_delete_white {background-position: -48px 0;}
+.inline_button_delete_yellow {background-position: -48px -24px;}
+.inline_button_delete_orange {background-position: -48px -48px;}
+.inline_button_delete_blue {background-position: -48px -72px;}
+
+.inline_button_cancel_white {background-position: -72px 0;}
+.inline_button_cancel_yellow {background-position: -72px -24px;}
+.inline_button_cancel_orange {background-position: -72px -48px;}
+.inline_button_cancel_blue {background-position: -72px -72px;}
+
+.inline_button_save_white {background-position: -96px 0;}
+.inline_button_save_yellow {background-position: -96px -24px;}
+.inline_button_save_orange {background-position: -96px -48px;}
+.inline_button_save_blue {background-position: -96px -72px;}
+
+.inline_button_print_white {background-position: -120px 0;}
+.inline_button_print_yellow {background-position: -120px -24px;}
+.inline_button_print_orange {background-position: -120px -48px;}
+.inline_button_print_blue {background-position: -120px -72px;}
+
+.inline_button_history_white {background-position: -120px 0;}
+.inline_button_history_yellow {background-position: -120px -24px;}
+.inline_button_history_orange {background-position: -120px -48px;}
+.inline_button_history_blue {background-position: -120px -72px;}
+
+/* Hover/Active-changes based on color */
+
+.inline_button_add_white:hover, .inline_button_add_white:focus {background-position: 0 -72px;}
+.inline_button_edit_white:hover, .inline_button_edit_white:focus {background-position: -24px -72px;}
+.inline_button_delete_white:hover, .inline_button_delete_white:focus {background-position: -48px -72px;}
+.inline_button_cancel_white:hover, .inline_button_cancel_white:focus {background-position: -72px -72px;}
+.inline_button_save_white:hover, .inline_button_save_white:focus {background-position: -96px -72px;}
+.inline_button_print_white:hover, .inline_button_print_white:focus {background-position: -120px -72px;}
+.inline_button_history_white:hover, .inline_button_history_white:focus {background-position: -120px -72px;}
+
+.inline_button_add_yellow:hover, .inline_button_add_yellow:focus {background-position: 0 -48px;}
+.inline_button_edit_yellow:hover, .inline_button_edit_yellow:focus {background-position: -24px -48px;}
+.inline_button_delete_yellow:hover, .inline_button_delete_yellow:focus {background-position: -48px -48px;}
+.inline_button_cancel_yellow:hover, .inline_button_cancel_yellow:focus {background-position: -72px -48px;}
+.inline_button_save_yellow:hover, .inline_button_save_yellow:focus {background-position: -96px -48px;}
+.inline_button_print_yellow:hover, .inline_button_print_yellow:focus {background-position: -120px -48px;}
+
+
+
+
+/*
+Icon sprites, Small
+----------------------------------------------------------------------------------
+*/
+
+.icon_image {}
+.icon_Small {width: 16px; height: 16px; background-image: url(../images/sprites/icons_16.png);}
+.icon_Medium {width: 24px; height: 24px; background-image: url(../images/sprites/icons_24.png);}
+.icon_Large {width: 32px; height: 32px;}
+
+
+/* First Column, small */
+
+/*
+AddressBook
+SwitchSetting
+Calendar
+PasteClipboard
+Switches
+Dialog
+SwitchScreen
+Image
+Information
+Globe
+SwitchApp
+Palette
+AppSwitch
+Graph
+GlobeDialog
+HardDrive
+SaveToHardDrive
+SaveAsToHardDrive
+*/
+
+.icon_Small_AddressBook {background-position: 0px 0px;}
+.icon_Small_AddressBookDisabled {background-position: -16px 0px;}
+
+.icon_Small_SwitchSetting {background-position: 0px -16px;}
+.icon_Small_SwitchSettingDisabled {background-position: -16px -16px;}
+
+.icon_Small_Calendar {background-position: 0px -32px;}
+.icon_Small_CalendarDisabled {background-position: -16px -32px;}
+
+.icon_Small_PasteClipboard {background-position: 0px -48px;}
+.icon_Small_PasteClipboardDisabled {background-position: -16px -48px;}
+
+.icon_Small_Switches {background-position: 0px -64px;}
+.icon_Small_SwitchesDisabled {background-position: -16px -64px;}
+
+.icon_Small_Dialog {background-position: 0px -80px;}
+.icon_Small_DialogDisabled {background-position: -16px -80px;}
+
+.icon_Small_SwitchScreen {background-position: 0px -96px;}
+.icon_Small_SwitchScreenDisabled {background-position: -16px -96px;}
+
+.icon_Small_Image {background-position: 0px -112px;}
+.icon_Small_ImageDisabled {background-position: -16px -112px;}
+
+.icon_Small_Information {background-position: 0px -128px;}
+.icon_Small_InformationDisabled {background-position: -16px -128px;}
+
+.icon_Small_Globe {background-position: 0px -144px;}
+.icon_Small_GlobeDisabled {background-position: -16px -144px;}
+
+.icon_Small_SwitchApp {background-position: 0px -160px;}
+.icon_Small_SwitchAppDisabled {background-position: -16px -160px;}
+
+.icon_Small_Palette {background-position: 0px -176px;}
+.icon_Small_PaletteDisabled {background-position: -16px -176px;}
+
+.icon_Small_AppSwitch {background-position: 0px -192px;}
+.icon_Small_AppSwitchDisabled {background-position: -16px -192px;}
+
+.icon_Small_Graph {background-position: 0px -208px;}
+.icon_Small_GraphDisabled {background-position: -16px -208px;}
+
+.icon_Small_GlobeDialog {background-position: 0px -224px;}
+.icon_Small_GlobeDialogDisabled {background-position: -16px -224px;}
+
+.icon_Small_HardDrive {background-position: 0px -240px;}
+.icon_Small_HardDriveDisabled {background-position: -16px -240px;}
+
+.icon_Small_SaveToHardDrive {background-position: 0px -256px;}
+.icon_Small_SaveToHardDriveDisabled {background-position: -16px -256px;}
+
+.icon_Small_SaveAsToHardDrive {background-position: 0px -272px;}
+.icon_Small_SaveAsToHardDriveDisabled {background-position: -16px -272px;}
+
+
+/* Second Column, small */
+
+/*
+LargeIcons
+Cut
+Documents
+EditDocument
+Notepad
+Copy
+Refresh
+Print
+PrintPreview
+Fax
+Family
+Parent
+Child
+Grandparent
+Guardian
+Fosterparent
+Redo
+Undo
+*/
+
+.icon_Small_LargeIcons {background-position: -32px 0px;}
+.icon_Small_LargeIconsDisabled {background-position: -48px 0px;}
+
+.icon_Small_Cut {background-position: -32px -16px;}
+.icon_Small_CutDisabled {background-position: -48px -16px;}
+
+.icon_Small_Documents {background-position: -32px -32px;}
+.icon_Small_DocumentsDisabled {background-position: -48px -32px;}
+
+.icon_Small_EditDocument {background-position: -32px -48px;}
+.icon_Small_EditDocumentDisabled {background-position: -48px -48px;}
+
+.icon_Small_Notepad {background-position: -32px -64px;}
+.icon_Small_NotepadDisabled {background-position: -48px -64px;}
+
+.icon_Small_Copy {background-position: -32px -80px;}
+.icon_Small_CopyDisabled {background-position: -48px -80px;}
+
+.icon_Small_Refresh {background-position: -32px -96px;}
+.icon_Small_RefreshDisabled {background-position: -48px -96px;}
+
+.icon_Small_Print {background-position: -32px -112px;}
+.icon_Small_PrintDisabled {background-position: -48px -112px;}
+
+.icon_Small_PrintPreview {background-position: -32px -128px;}
+.icon_Small_PrintPreviewDisabled {background-position: -48px -128px;}
+
+.icon_Small_Fax {background-position: -32px -144px;}
+.icon_Small_FaxDisabled {background-position: -48px -144px;}
+
+.icon_Small_Family {background-position: -32px -160px;}
+.icon_Small_FamilyDisabled {background-position: -48px -160px;}
+
+.icon_Small_Parent {background-position: -32px -176px;}
+.icon_Small_ParentDisabled {background-position: -48px -176px;}
+
+.icon_Small_Child {background-position: -32px -192px;}
+.icon_Small_ChildDisabled {background-position: -48px -192px;}
+
+.icon_Small_Grandparent {background-position: -32px -208px;}
+.icon_Small_GrandparentDisabled {background-position: -48px -208px;}
+
+.icon_Small_Guardian {background-position: -32px -224px;}
+.icon_Small_GuardianDisabled {background-position: -48px -224px;}
+
+.icon_Small_Fosterparent {background-position: -32px -240px;}
+.icon_Small_FosterparentDisabled {background-position: -48px -240px;}
+
+.icon_Small_Redo {background-position: -32px -256px;}
+.icon_Small_RedoDisabled {background-position: -48px -256px;}
+
+.icon_Small_Undo {background-position: -32px -272px;}
+.icon_Small_UndoDisabled {background-position: -48px -272px;}
+
+
+/* Third Column, small */
+
+/*
+AddFavorite
+Favorites
+Folder
+CopyFolder
+PasteFolder
+OpenFolder
+Lock
+Unlock
+MagnifyingGlass
+ZoomIn
+ZoomOut
+Cancel
+Close
+Delete
+StopSign
+RedFlag
+Star
+Checkmark
+*/
+
+.icon_Small_AddFavorite {background-position: -64px 0px;}
+.icon_Small_AddFavoriteDisabled {background-position: -80px 0px;}
+
+.icon_Small_Favorites {background-position: -64px -16px;}
+.icon_Small_FavoritesDisabled {background-position: -80px -16px;}
+
+.icon_Small_Folder {background-position: -64px -32px;}
+.icon_Small_FolderDisabled {background-position: -80px -32px;}
+
+.icon_Small_CopyFolder {background-position: -64px -48px;}
+.icon_Small_CopyFolderDisabled {background-position: -80px -48px;}
+
+.icon_Small_PasteFolder {background-position: -64px -64px;}
+.icon_Small_PasteFolderDisabled {background-position: -80px -64px;}
+
+.icon_Small_OpenFolder {background-position: -64px -80px;}
+.icon_Small_OpenFolderDisabled {background-position: -80px -80px;}
+
+.icon_Small_Lock {background-position: -64px -96px;}
+.icon_Small_LockDisabled {background-position: -80px -96px;}
+
+.icon_Small_Unlock {background-position: -64px -112px;}
+.icon_Small_UnlockDisabled {background-position: -80px -112px;}
+
+.icon_Small_MagnifyingGlass {background-position: -64px -128px;}
+.icon_Small_MagnifyingGlassDisabled {background-position: -80px -128px;}
+
+.icon_Small_ZoomIn {background-position: -64px -144px;}
+.icon_Small_ZoomInDisabled {background-position: -80px -144px;}
+
+.icon_Small_ZoomOut {background-position: -64px -160px;}
+.icon_Small_ZoomOutDisabled {background-position: -80px -160px;}
+
+.icon_Small_Cancel {background-position: -64px -176px;}
+.icon_Small_CancelDisabled {background-position: -80px -176px;}
+
+.icon_Small_Close {background-position: -64px -192px;}
+.icon_Small_CloseDisabled {background-position: -80px -192px;}
+
+.icon_Small_Delete {background-position: -64px -208px;}
+.icon_Small_DeleteDisabled {background-position: -80px -208px;}
+
+.icon_Small_StopSign {background-position: -64px -224px;}
+.icon_Small_StopSignDisabled {background-position: -80px -224px;}
+
+.icon_Small_RedFlag {background-position: -64px -240px;}
+.icon_Small_RedFlagDisabled {background-position: -80px -240px;}
+
+.icon_Small_Star {background-position: -64px -256px;}
+.icon_Small_StarDisabled {background-position: -80px -256px;}
+
+.icon_Small_Checkmark {background-position: -64px -272px;}
+.icon_Small_CheckmarkDisabled {background-position: -80px -272px;}
+
+
+/* Fourth Column, small */
+
+/*
+Calculator
+Camera
+ShoppingCart
+Time
+Disc
+GamePiece
+TrafficLight
+LifePreserver
+Home
+Mail
+NewIcon
+Phone
+Gear
+Music
+AlarmClock
+Wrench
+TrashCan
+Wizard
+*/
+
+.icon_Small_Calculator {background-position: -96px 0px;}
+.icon_Small_CalculatorDisabled {background-position: -112px 0px;}
+
+.icon_Small_Camera {background-position: -96px -16px;}
+.icon_Small_CameraDisabled {background-position: -112px -16px;}
+
+.icon_Small_ShoppingCart {background-position: -96px -32px;}
+.icon_Small_ShoppingCartDisabled {background-position: -112px -32px;}
+
+.icon_Small_Time {background-position: -96px -48px;}
+.icon_Small_TimeDisabled {background-position: -112px -48px;}
+
+.icon_Small_Disc {background-position: -96px -64px;}
+.icon_Small_DiscDisabled {background-position: -112px -64px;}
+
+.icon_Small_GamePiece {background-position: -96px -80px;}
+.icon_Small_GamePieceDisabled {background-position: -112px -80px;}
+
+.icon_Small_TrafficLight {background-position: -96px -96px;}
+.icon_Small_TrafficLightDisabled {background-position: -112px -96px;}
+
+.icon_Small_LifePreserver {background-position: -96px -112px;}
+.icon_Small_LifePreserverDisabled {background-position: -112px -112px;}
+
+.icon_Small_Home {background-position: -96px -128px;}
+.icon_Small_HomeDisabled {background-position: -112px -128px;}
+
+.icon_Small_Mail {background-position: -96px -144px;}
+.icon_Small_MailDisabled {background-position: -112px -144px;}
+
+.icon_Small_NewIcon {background-position: -96px -160px;}
+.icon_Small_NewIconDisabled {background-position: -112px -160px;}
+
+.icon_Small_Phone {background-position: -96px -176px;}
+.icon_Small_PhoneDisabled {background-position: -112px -176px;}
+
+.icon_Small_Gear {background-position: -96px -192px;}
+.icon_Small_GearDisabled {background-position: -112px -192px;}
+
+.icon_Small_Music {background-position: -96px -208px;}
+.icon_Small_MusicDisabled {background-position: -112px -208px;}
+
+.icon_Small_AlarmClock {background-position: -96px -224px;}
+.icon_Small_AlarmClockDisabled {background-position: -112px -224px;}
+
+.icon_Small_Wrench {background-position: -96px -240px;}
+.icon_Small_WrenchDisabled {background-position: -112px -240px;}
+
+.icon_Small_TrashCan {background-position: -96px -256px;}
+.icon_Small_TrashCanDisabled {background-position: -112px -256px;}
+
+.icon_Small_Wizard {background-position: -96px -272px;}
+.icon_Small_WizardDisabled {background-position: -112px -272px;}
+
+
+/* Fifth Column, small */
+
+/*
+DoubleUpArrows
+DoubleDownArrows
+DoubleRightArrows
+DoubleLeftArrows
+PlusSign
+MinusSign
+Play
+Pause
+Stop
+UpArrow
+RightArrow
+DownArrow
+LeftArrow
+MoveEndArrow
+MoveStartArrow
+SingleUpArrow
+SingleDownArrow
+SingleRightArrow
+SingleLeftArrow
+*/
+
+.icon_Small_DoubleUpArrows {background-position: -128px 0px;}
+.icon_Small_DoubleUpArrowsDisabled {background-position: -144px -0px;}
+
+.icon_Small_DoubleDownArrows {background-position: -128px -16px;}
+.icon_Small_DoubleDownArrowsDisabled {background-position: -144px -16px;}
+
+.icon_Small_DoubleRightArrows {background-position: -128px -32px;}
+.icon_Small_DoubleRightArrowsDisabled {background-position: -144px -32px;}
+
+.icon_Small_DoubleLeftArrows {background-position: -128px -48px;}
+.icon_Small_DoubleLeftArrowsDisabled {background-position: -144px -48px;}
+
+.icon_Small_PlusSign {background-position: -128px -64px;}
+.icon_Small_PlusSignDisabled {background-position: -144px -64px;}
+
+.icon_Small_MinusSign {background-position: -128px -80px;}
+.icon_Small_MinusSignDisabled {background-position: -144px -80px;}
+
+.icon_Small_PlayButton {background-position: -128px -96px;}
+.icon_Small_PlayButtonDisabled {background-position: -144px -96px;}
+
+.icon_Small_PauseButton {background-position: -128px -112px;}
+.icon_Small_PauseButtonDisabled {background-position: -144px -112px;}
+
+.icon_Small_StopButton {background-position: -128px -128px;}
+.icon_Small_StopButtonDisabled {background-position: -144px -128px;}
+
+.icon_Small_UpArrow {background-position: -128px -144px;}
+.icon_Small_UpArrowDisabled {background-position: -144px -144px;}
+
+.icon_Small_RightArrow {background-position: -128px -160px;}
+.icon_Small_RightArrowDisabled {background-position: -144px -160px;}
+
+.icon_Small_DownArrow {background-position: -128px -176px;}
+.icon_Small_DownArrowDisabled {background-position: -144px -176px;}
+
+.icon_Small_LeftArrow {background-position: -128px -192px;}
+.icon_Small_LeftArrowDisabled {background-position: -144px -192px;}
+
+.icon_Small_MoveEndArrow {background-position: -128px -208px;}
+.icon_Small_MoveEndArrowDisabled {background-position: -144px -208px;}
+
+.icon_Small_MoveStartArrow {background-position: -128px -224px;}
+.icon_Small_MoveStartArrowDisabled {background-position: -144px -224px;}
+
+.icon_Small_SingleUpArrow {background-position: -128px -240px;}
+.icon_Small_SingleUpArrowDisabled {background-position: -144px -240px;}
+
+.icon_Small_SingleDownArrow {background-position: -128px -256px;}
+.icon_Small_SingleDownArrowDisabled {background-position: -144px -256px;}
+
+.icon_Small_SingleRightArrow {background-position: -128px -272px;}
+.icon_Small_SingleRightArrowDisabled {background-position: -144px -272px;}
+
+.icon_Small_SingleLeftArrow {background-position: -128px -288px;}
+.icon_Small_SingleLeftArrowDisabled {background-position: -144px -288px;}
+
+
+
+
+
+
+
+
+
+/* First Column, medium */
+
+.icon_Medium_AddressBook {background-position: 0px 0px;}
+.icon_Medium_AddressBookDisabled {background-position: -24px 0px;}
+
+.icon_Medium_SwitchSetting {background-position: 0px -24px;}
+.icon_Medium_SwitchSettingDisabled {background-position: -24px -24px;}
+
+.icon_Medium_Calendar {background-position: 0px -48px;}
+.icon_Medium_CalendarDisabled {background-position: -24px -48px;}
+
+.icon_Medium_PasteClipboard {background-position: 0px -72px;}
+.icon_Medium_PasteClipboardDisabled {background-position: -24px -72px;}
+
+.icon_Medium_Switches {background-position: 0px -96px;}
+.icon_Medium_SwitchesDisabled {background-position: -24px -96px;}
+
+.icon_Medium_Dialog {background-position: 0px -120px;}
+.icon_Medium_DialogDisabled {background-position: -24px -120px;}
+
+.icon_Medium_SwitchScreen {background-position: 0px -144px;}
+.icon_Medium_SwitchScreenDisabled {background-position: -24px -144px;}
+
+.icon_Medium_Image {background-position: 0px -168px;}
+.icon_Medium_ImageDisabled {background-position: -24px -168px;}
+
+.icon_Medium_Information {background-position: 0px -192px;}
+.icon_Medium_InformationDisabled {background-position: -24px -192px;}
+
+.icon_Medium_Globe {background-position: 0px -216px;}
+.icon_Medium_GlobeDisabled {background-position: -24px -216px;}
+
+.icon_Medium_SwitchApp {background-position: 0px -240px;}
+.icon_Medium_SwitchAppDisabled {background-position: -24px -240px;}
+
+.icon_Medium_Palette {background-position: 0px -264px;}
+.icon_Medium_PaletteDisabled {background-position: -24px -264px;}
+
+.icon_Medium_AppSwitch {background-position: 0px -288px;}
+.icon_Medium_AppSwitchDisabled {background-position: -24px -288px;}
+
+.icon_Medium_Graph {background-position: 0px -312px;}
+.icon_Medium_GraphDisabled {background-position: -24px -312px;}
+
+.icon_Medium_GlobeDialog {background-position: 0px -336px;}
+.icon_Medium_GlobeDialogDisabled {background-position: -24px -336px;}
+
+.icon_Medium_HardDrive {background-position: 0px -360px;}
+.icon_Medium_HardDriveDisabled {background-position: -24px -360px;}
+
+.icon_Medium_SaveToHardDrive {background-position: 0px -384px;}
+.icon_Medium_SaveToHardDriveDisabled {background-position: -24px -384px;}
+
+.icon_Medium_SaveAsToHardDrive {background-position: 0px -408px;}
+.icon_Medium_SaveAsToHardDriveDisabled {background-position: -24px -408px;}
+
+
+
+
+/* Second Column, medium */
+
+.icon_Medium_LargeIcons {background-position: -48px 0px;}
+.icon_Medium_LargeIconsDisabled {background-position: -72px 0px;}
+
+.icon_Medium_Cut {background-position: -48px -24px;}
+.icon_Medium_CutDisabled {background-position: -72px -24px;}
+
+.icon_Medium_Documents {background-position: -48px -48px;}
+.icon_Medium_DocumentsDisabled {background-position: -72px -48px;}
+
+.icon_Medium_EditDocument {background-position: -48px -72px;}
+.icon_Medium_EditDocumentDisabled {background-position: -72px -72px;}
+
+.icon_Medium_Notepad {background-position: -48px -96px;}
+.icon_Medium_NotepadDisabled {background-position: -72px -96px;}
+
+.icon_Medium_Copy {background-position: -48px -120px;}
+.icon_Medium_CopyDisabled {background-position: -72px -120px;}
+
+.icon_Medium_Refresh {background-position: -48px -144px;}
+.icon_Medium_RefreshDisabled {background-position: -72px -144px;}
+
+.icon_Medium_Print {background-position: -48px -168px;}
+.icon_Medium_PrintDisabled {background-position: -72px -168px;}
+
+.icon_Medium_PrintPreview {background-position: -48px -192px;}
+.icon_Medium_PrintPreviewDisabled {background-position: -72px -192px;}
+
+.icon_Medium_Fax {background-position: -48px -216px;}
+.icon_Medium_FaxDisabled {background-position: -72px -216px;}
+
+.icon_Medium_Family {background-position: -48px -240px;}
+.icon_Medium_FamilyDisabled {background-position: -72px -240px;}
+
+.icon_Medium_Parent {background-position: -48px -264px;}
+.icon_Medium_ParentDisabled {background-position: -72px -264px;}
+
+.icon_Medium_Child {background-position: -48px -288px;}
+.icon_Medium_ChildDisabled {background-position: -72px -288px;}
+
+.icon_Medium_Grandparent {background-position: -48px -312px;}
+.icon_Medium_GrandparentDisabled {background-position: -72px -312px;}
+
+.icon_Medium_Guardian {background-position: -48px -336px;}
+.icon_Medium_GuardianDisabled {background-position: -72px -336px;}
+
+.icon_Medium_Fosterparent {background-position: -48px -360px;}
+.icon_Medium_FosterparentDisabled {background-position: -72px -360px;}
+
+.icon_Medium_Redo {background-position: -48px -384x;}
+.icon_Medium_RedoDisabled {background-position: -72px -384px;}
+
+.icon_Medium_Undo {background-position: -48px -408px;}
+.icon_Medium_UndoDisabled {background-position: -72px -408px;}
+
+
+/* Third Column, medium */
+
+.icon_Medium_AddFavorite {background-position: -96px 0px;}
+.icon_Medium_AddFavoriteDisabled {background-position: -120px 0px;}
+
+.icon_Medium_Favorites {background-position: -96px -24px;}
+.icon_Medium_FavoritesDisabled {background-position: -120px -24px;}
+
+.icon_Medium_Folder {background-position: -96px -48px;}
+.icon_Medium_FolderDisabled {background-position: -120px -48px;}
+
+.icon_Medium_CopyFolder {background-position: -96px -72px;}
+.icon_Medium_CopyFolderDisabled {background-position: -120px -72px;}
+
+.icon_Medium_PasteFolder {background-position: -96px -96px;}
+.icon_Medium_PasteFolderDisabled {background-position: -120px -96px;}
+
+.icon_Medium_OpenFolder {background-position: -96px -120px;}
+.icon_Medium_OpenFolderDisabled {background-position: -120px -120px;}
+
+.icon_Medium_Lock {background-position: -96px -144px;}
+.icon_Medium_LockDisabled {background-position: -120px -144px;}
+
+.icon_Medium_Unlock {background-position: -96px -168px;}
+.icon_Medium_UnlockDisabled {background-position: -120px -168px;}
+
+.icon_Medium_MagnifyingGlass {background-position: -96px -192px;}
+.icon_Medium_MagnifyingGlassDisabled {background-position: -120px -192px;}
+
+.icon_Medium_ZoomIn {background-position: -96px -216px;}
+.icon_Medium_ZoomInDisabled {background-position: -120px -216px;}
+
+.icon_Medium_ZoomOut {background-position: -96px -240px;}
+.icon_Medium_ZoomOutDisabled {background-position: -120px -240px;}
+
+.icon_Medium_Cancel {background-position: -96px -264px;}
+.icon_Medium_CancelDisabled {background-position: -120px -264px;}
+
+.icon_Medium_Close {background-position: -96px -288px;}
+.icon_Medium_CloseDisabled {background-position: -120px -288px;}
+
+.icon_Medium_Delete {background-position: -96px -312px;}
+.icon_Medium_DeleteDisabled {background-position: -120px -312px;}
+
+.icon_Medium_StopSign {background-position: -96px -336px;}
+.icon_Medium_StopSignDisabled {background-position: -120px -336px;}
+
+.icon_Medium_RedFlag {background-position: -96px -360px;}
+.icon_Medium_RedFlagDisabled {background-position: -120px -360px;}
+
+.icon_Medium_Star {background-position: -96px -384px;}
+.icon_Medium_StarDisabled {background-position: -120px -384px;}
+
+.icon_Medium_Checkmark {background-position: -96px -408px;}
+.icon_Medium_CheckmarkDisabled {background-position: -120px -408px;}
+
+
+
+
+/* Fourth Column, medium */
+
+.icon_Medium_Calculator {background-position: -144px 0px;}
+.icon_Medium_CalculatorDisabled {background-position: -168px 0px;}
+
+.icon_Medium_Camera {background-position: -144px -24px;}
+.icon_Medium_CameraDisabled {background-position: -168px -24px;}
+
+.icon_Medium_ShoppingCart {background-position: -144px -48px;}
+.icon_Medium_ShoppingCartDisabled {background-position: -168px -48px;}
+
+.icon_Medium_Time {background-position: -144px -72px;}
+.icon_Medium_TimeDisabled {background-position: -168px -72px;}
+
+.icon_Medium_Disc {background-position: -144px -96px;}
+.icon_Medium_DiscDisabled {background-position: -168px -96px;}
+
+.icon_Medium_GamePiece {background-position: -144px -120px;}
+.icon_Medium_GamePieceDisabled {background-position: -168px -120px;}
+
+.icon_Medium_TrafficLight {background-position: -144px -144px;}
+.icon_Medium_TrafficLightDisabled {background-position: -168px -144px;}
+
+.icon_Medium_LifePreserver {background-position: -144px -168px;}
+.icon_Medium_LifePreserverDisabled {background-position: -168px -168px;}
+
+.icon_Medium_Home {background-position: -144px -192px;}
+.icon_Medium_HomeDisabled {background-position: -168px -192px;}
+
+.icon_Medium_Mail {background-position: -144px -216px;}
+.icon_Medium_MailDisabled {background-position: -168px -216px;}
+
+.icon_Medium_NewIcon {background-position: -144px -240px;}
+.icon_Medium_NewIconDisabled {background-position: -168px -240px;}
+
+.icon_Medium_Phone {background-position: -144px -264px;}
+.icon_Medium_PhoneDisabled {background-position: -168px -264px;}
+
+.icon_Medium_Gear {background-position: -144px -288px;}
+.icon_Medium_GearDisabled {background-position: -168px -288px;}
+
+.icon_Medium_Music {background-position: -144px -312px;}
+.icon_Medium_MusicDisabled {background-position: -168px -312px;}
+
+.icon_Medium_AlarmClock {background-position: -144px -336px;}
+.icon_Medium_AlarmClockDisabled {background-position: -168px -336px;}
+
+.icon_Medium_Wrench {background-position: -144px -360px;}
+.icon_Medium_WrenchDisabled {background-position: -168px -360px;}
+
+.icon_Medium_TrashCan {background-position: -144px -384px;}
+.icon_Medium_TrashCanDisabled {background-position: -168px -384px;}
+
+.icon_Medium_Wizard {background-position: -144px -408px;}
+.icon_Medium_WizardDisabled {background-position: -168px -408px;}
+
+
+/* Fifth Column, medium */
+
+.icon_Medium_DoubleUpArrows {background-position: -192px 0px;}
+.icon_Medium_DoubleUpArrowsDisabled {background-position: -216px -0px;}
+
+.icon_Medium_DoubleDownArrows {background-position: -192px -24px;}
+.icon_Medium_DoubleDownArrowsDisabled {background-position: -216px -24px;}
+
+.icon_Medium_DoubleRightArrows {background-position: -192px -48px;}
+.icon_Medium_DoubleRightArrowsDisabled {background-position: -216px -48px;}
+
+.icon_Medium_DoubleLeftArrows {background-position: -192px -72px;}
+.icon_Medium_DoubleLeftArrowsDisabled {background-position: -216px -72px;}
+
+.icon_Medium_PlusSign {background-position: -192px -96px;}
+.icon_Medium_PlusSignDisabled {background-position: -216px -96px;}
+
+.icon_Medium_MinusSign {background-position: -192px -120px;}
+.icon_Medium_MinusSignDisabled {background-position: -216px -120px;}
+
+.icon_Medium_PlayButton {background-position: -192px -144px;}
+.icon_Medium_PlayButtonDisabled {background-position: -216px -144px;}
+
+.icon_Medium_PauseButton {background-position: -192px -168px;}
+.icon_Medium_PauseButtonDisabled {background-position: -216px -168px;}
+
+.icon_Medium_StopButton {background-position: -192px -192px;}
+.icon_Medium_StopButtonDisabled {background-position: -216px -192px;}
+
+.icon_Medium_UpArrow {background-position: -192px -216px;}
+.icon_Medium_UpArrowDisabled {background-position: -216px -216px;}
+
+.icon_Medium_RightArrow {background-position: -192px -240px;}
+.icon_Medium_RightArrowDisabled {background-position: -216px -240px;}
+
+.icon_Medium_DownArrow {background-position: -192px -264px;}
+.icon_Medium_DownArrowDisabled {background-position: -216px -264px;}
+
+.icon_Medium_LeftArrow {background-position: -192px -288px;}
+.icon_Medium_LeftArrowDisabled {background-position: -216px -288px;}
+
+.icon_Medium_MoveEndArrow {background-position: -192px -312px;}
+.icon_Medium_MoveEndArrowDisabled {background-position: -216px -312px;}
+
+.icon_Medium_MoveStartArrow {background-position: -192px -336px;}
+.icon_Medium_MoveStartArrowDisabled {background-position: -216px -336px;}
+
+.icon_Medium_SingleUpArrow {background-position: -192px -360px;}
+.icon_Medium_SingleUpArrowDisabled {background-position: -216px -360px;}
+
+.icon_Medium_SingleDownArrow {background-position: -192px -384px;}
+.icon_Medium_SingleDownArrowDisabled {background-position: -216px -384px;}
+
+.icon_Medium_SingleRightArrow {background-position: -192px -408px;}
+.icon_Medium_SingleRightArrowDisabled {background-position: -216px -408px;}
+
+.icon_Medium_SingleLeftArrow {background-position: -192px -432px;}
+.icon_Medium_SingleLeftArrowDisabled {background-position: -216px -432px;}
+
+
+
+
+

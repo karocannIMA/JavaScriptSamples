@@ -1,0 +1,74 @@
+﻿/*
+Attendance.css
+==================================================================================
+This style sheet contains all styles for the attenance controller.
+----------------------------------------------------------------------------------
+*/
+
+/* Attendance entry */
+#attendance_entry #AttendanceEntryForm fieldset label {font-weight: bold;}
+#attendance_entry #ProviderID {width: 200px;}
+
+#attendance_entry .panel_data {}
+
+#attendance_entry .panel_data td.attendance_date {font-weight: bold;  font-size: 1.1em;}
+#attendance_entry .panel_data td.attendance_date .html_label {float: left;}
+
+#attendance_entry .panel_data tr.summary_row td {background-color: #D5EEFF;  border-top: 1px solid gray;}
+#attendance_entry .panel_data tr.summary_row td.meal_type {width: 1%;}
+
+#attendance_entry tr.summary_row td .absence_type {width: 104px;}
+#attendance_entry tr.summary_row td .total_hours {width: 70px;}
+#attendance_entry tr.summary_row td .attendance_type {width: 150px;}
+
+#attendance_entry tr.detail_row td.label {color: black;  font-weight: bold;}
+#attendance_entry tr.detail_row td .attendance_detail_time {width: 100px;}
+#attendance_entry tr.detail_row td .attendance_detail_hours {width: 70px;}
+#attendance_entry tr.detail_row td .attendance_detail_program {width: 150px;}
+#attendance_entry tr.detail_row td .attendance_detail_classroom {width: 115px;}
+
+#attendance_entry tr.new_row td {border-bottom: 0;}
+
+#attendance_entry tr.new_row td.label {color: Gray;  font-weight: bold;}
+
+
+/* Attendance history */
+#attendance_history #AttendanceHistoryForm fieldset label {font-weight: bold;}
+#attendance_history #ProviderID {width: 200px;}
+
+#attendance_history .panel_data {}
+
+#attendance_history .panel_data td.attendance_date {font-weight: bold;  font-size: 1.1em;}
+#attendance_history .panel_data td.attendance_date .html_label {float: left;}
+
+#attendance_history .panel_data tr.summary_row td {background-color: #D5EEFF;  border-top: 1px solid gray;}
+#attendance_history .panel_data tr.summary_row td.meal_type {width: 1%;}
+
+#attendance_history tr.summary_row td .absence_type {width: 104px;}
+#attendance_history tr.summary_row td .total_hours {width: 70px;}
+#attendance_history tr.summary_row td .attendance_type {width: 150px;}
+
+#attendance_history tr.detail_row td.label {color: black;  font-weight: bold;}
+#attendance_history tr.detail_row td .attendance_detail_time {width: 100px;}
+#attendance_history tr.detail_row td .attendance_detail_hours {width: 70px;}
+#attendance_history tr.detail_row td .attendance_detail_program {width: 150px;}
+#attendance_history tr.detail_row td .attendance_detail_classroom {width: 115px;}
+
+#attendance_history tr.new_row td {border-bottom: 0;}
+
+#attendance_history tr.new_row td.label {color: Gray;  font-weight: bold;}
+
+/* Row-toggle formatting */
+
+ .child_search_results {position: relative;  height: 1%;}
+
+ .child_search_results table td table {border-collapse: separate;  width: 100%;}
+
+ #att_entry_children_listing .content {padding: 10px;}
+ #att_entry_children_listing .content ul li {border: 1px solid #EEEEEE; border-top: 0;}
+ #att_entry_children_listing .content ul li.header {border: 0;}
+
+ #att_entry_children_listing #scheduleData tr.detail_row td .attendance_detail_hours {width: 50px;}
+ #att_entry_children_listing #scheduleData tr.summary_row td .total_hours {width: 50px;}
+ #att_entry_children_listing #scheduleData tr.detail_row td .attendance_detail_program {width: 100px;}
+

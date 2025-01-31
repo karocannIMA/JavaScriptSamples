@@ -1,0 +1,42 @@
+﻿/*
+Provider.css
+==================================================================================
+Contains all styles specific to the provider form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+
+#provider_information_panel {z-index: 2;}
+
+#provider_information_panel .record_summary .summary_header .record_name 
+{
+    max-width: 300px;
+    /*max-height: 2em;*/
+    overflow: hidden;
+}
+
+.enrollmentFields #MaximumEnrollment 
+{
+    max-width: 100px;
+    margin-left: 5.3em;
+}
+
+.schedule_details .daily_schedule th {
+    font-size: .75em;
+}
+.summary_information .columns p.last  
+{
+    margin-left:5em;
+    width: 400px;
+    /*color:blue;
+    outline:#00FF00 dotted thick;*/
+  
+}
+
+.summary_information .columns span.txtWrap 
+{
+    display: block;
+    white-space: wrap;
+    /*color:blue;
+    outline:#00FF00 dotted thick;*/
+  
+}

@@ -1,0 +1,192 @@
+﻿
+.datagrid {background-color:silver;
+          color:black;
+          border: solid 1px gray;
+          font-size:1em;}
+
+.inactive {background-color:gray;
+           color:#FFF;}
+
+.reconciled {background-color:green;
+             color:#FFF;}
+
+.outstanding {background-color:white;}
+
+.redflagstatus {background-color:Yellow;}             
+                         
+.cleared {background-color:lightblue;}                                      
+            
+.exported {background-color:yellow;}                                                  
+
+.void {background-color:gray;}                                      
+
+.datagrid td  {border: solid 1px gray;
+                color:Black;
+                font-size:1em;}
+
+.datagrid th {background-color:silver;
+                color:Black;
+                font-size:1.4em;
+                font-weight:bold;}   
+
+.datagrid table td
+{
+	border: 1px solid #CCC;
+	border-collapse:collapse;
+    font:Verdana,Arial
+}
+.datagrid table
+{
+	border:1px solid #CCC;
+	height:50%;
+	overflow:scroll;
+	background-color:#FFF;
+}
+
+.datagrid thead th,
+.datagrid tbody th
+{
+    background-color:#FFF;
+    color:#666;  
+	padding:5px 10px;
+    border-left: 1px solid #CCC;
+}
+.datagrid tbody th
+{
+  background:#fafafb;
+  border-top:1px solid #CCC;
+  text-align:left;
+  font-weight:normal;
+}
+.datagrid tbody tr td
+{
+  padding:  5px 10px;
+  color: #666;
+  background-color:#FFF;
+}
+.datagrid tbody tr:hover /*won't work in IE???*/
+{
+  background-color:#FFF;
+}
+
+.datagrid tbody tr:hover td
+{
+  color: #454545;
+}
+
+.datagrid tfoot td,
+.datagrid tfoot th
+{
+  border-left:none;
+  border-top:1px solid #CCC;
+  padding:4px;
+  background-color:#FFF;
+  color:#666;
+}
+.datagrid caption
+{
+	text-align: left;
+	font-size: 120%;
+	padding: 10px 0;
+	color: #666;
+}
+.datagrid table a:link
+{
+	color:#666;
+}
+.datagrid table a:visited
+{
+	color:#666;
+}
+.datagrid table a:hover
+{
+	color: #003366;
+	text-decoration:none;
+}
+.datagrid table a:active
+{
+	color:#003366;
+}
+
+
+.datagrid-pager-item-selected {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: whitesmoke;
+}
+
+.datagrid-pager-item {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #2e2e2e;
+}
+
+.datagrid-data {
+    color: #2e2e2e;
+}
+
+a[data-tooltip] {
+    position: relative;
+    text-decoration: underline;
+    color: #00F;
+    cursor: help;
+}
+
+    a[data-tooltip]:hover::after,
+    a[data-tooltip]:focus::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        left: 15px;
+        top: -3px;
+        min-width: 350px;
+        border: 5px silver solid;
+        border-radius: 5px;
+        background-color: #D5EEFF;
+        padding: 12px;
+        color: #000000;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 20px 0;
+        font-family: monospace;
+    }
+
+.datagrid-header-asc {
+    background: url(../../Assets/images/icons/up_16.png) 90% 50% no-repeat;
+    background-color: whitesmoke !important;
+    color: #2e2e2e !important;
+}
+
+.datagrid-header-desc {
+    background: url(../../Assets/images/icons/down_16.png) 90% 50% no-repeat;
+    background-color: whitesmoke !important;
+    color: #2e2e2e !important;
+}
+
+    .datagrid-header-desc a, .datagrid-header-asc a {
+        color: #2e2e2e !important;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 24px;
+    }
+
+datagrid-pagesizer-container {
+    display:inline-block;
+    border:2px solid black;
+    border-radius:5%;
+}
+
+.datagrid-pagesizer-container select {
+    width: 85px !important;
+}

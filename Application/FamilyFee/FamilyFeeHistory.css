@@ -1,0 +1,17 @@
+﻿
+/* Specific width and text formatting */
+#statement_month_selection #Month {width: 35%}
+#statement_month_selection #Year {width: 24.5%}
+
+#family_fee_queue_detail_panel tr.dividing_row td {border-top: 1px solid black; border-bottom: 2px solid black;}
+#family_fee_queue_detail_panel tr.totals_row td {border-bottom: 1px solid black;}
+.RMR {color: Red;}
+
+.queue_content {
+    position: relative;
+    display: none;
+}
+
+.hidden_fields {display: none;}
+
+.currency {text-align:right;}

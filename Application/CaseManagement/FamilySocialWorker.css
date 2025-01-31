@@ -1,0 +1,19 @@
+﻿/*
+FamilySocialWorker.css
+==================================================================================
+Contains all styles specific to the family social worker form and all of it's subforms.
+----------------------------------------------------------------------------------
+*/
+/* ------- SOCIAL WORKER FORM ----------- */
+
+#social_worker #social_worker_fields label  {padding-left:5px; padding-right:5px;}
+#social_worker #social_worker_fields td  {padding-top:1px; padding-bottom:2px;}
+#social_worker #Name    {width:290px;}
+#social_worker #FileNo  {width:290px;}
+#social_worker #Region  {width:202px;}
+#social_worker #State   {width:30px;}
+#social_worker #Phone   {width:184px;}
+#social_worker #Extension  {width:60px;}
+#social_worker #ExpirationDate  {width:290px;}
+
+

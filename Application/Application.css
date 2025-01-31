@@ -1,0 +1,261 @@
+﻿/*
+Application.css
+==================================================================================
+Contains the basic styles for the Site.master page.  For the most part, this 
+master page will be used thoughout the system as the container for authenticated 
+views parts of the application
+----------------------------------------------------------------------------------
+*/
+
+
+
+/* Basic document settings
+--------------------------------------------------------------------------------- */
+
+body {position: relative;  height: 100%;  margin-bottom: 2em;}
+
+
+/* Application header
+--------------------------------------------------------------------------------- */
+
+#application_header {
+	position: relative;  z-index: 50;
+	height: 57px;
+	background: url(../../images/application_header_bg_tall.png) top left repeat-x;
+	margin-bottom: 13px;
+}
+
+#application_header .content {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#application_header #app_badge {
+	float: left;
+	margin: 12px 0 0 0;
+}
+
+#application_header #app_badge img,
+#application_header #app_badge span.app_name,
+#application_header #app_badge span.version {float: left;}
+
+#application_header #app_badge {font-weight: bold;  font-size: 1.4em;}
+#application_header #app_badge img {margin-right: 5px;}
+
+#application_header #app_badge span.app_name {text-transform: uppercase;}
+
+#application_header #app_badge span.app_name span {
+	color: Gray;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	margin-right: 10px;
+}
+
+#application_header #app_badge span.version {
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+
+/* Top navigation bar formatting
+------------------------------------------------------------------- */
+
+#application_header #application_navigation {float: right;  margin-top: 12px; clear: none !important;}
+#application_header #application_navigation ul {overflow: auto;}
+#application_header #application_navigation ul li {
+    float: left;
+    margin-right: 16px;
+    overflow: auto;
+}
+
+#application_header #application_navigation ul li.last {margin-right: 0;}
+#application_header #application_navigation ul li.selected {font-weight: bold;}
+#application_header #application_navigation ul li * {float: left;}
+#application_header #application_navigation ul li h4 {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#application_header #application_navigation ul li h4:hover {text-decoration: underline;}
+#application_header #application_navigation ul li img {margin: 3px 0 0 3px;}
+
+
+
+/* Submenu dropdown formatting
+------------------------------------------------------------------- */
+
+#application_header #case_management_nav_dropdown {width: 50%;}
+#application_header #attendance_nav_dropdown {width: 25%;}
+#application_header #provider_payment_nav_dropdown {width: 25%;}
+#application_header #family_fees_nav_dropdown {width: 30%;}
+#application_header #reports_nav_dropdown {width: 27%;}
+#application_header #setup_nav_dropdown {width: 27%;}
+#application_header #utilities_nav_dropdown {width: 25%;}
+
+#application_header .application_nav_dropdown {
+    position: absolute;
+    width: 30%;
+    display: none;
+}
+
+#application_header .application_nav_dropdown ul.nav_list {
+    position: relative;
+    overflow: auto;
+}
+
+#application_header .application_nav_dropdown ul.nav_list > li {
+    overflow: auto;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 8px 4px;
+}
+
+#application_header .application_nav_dropdown ul.nav_list > li.under_construction {
+    background-image: url(../../images/icons/cancel_16.png);
+    background-position: right 8px;
+    background-repeat: no-repeat;
+}
+
+#application_header .application_nav_dropdown ul.nav_list > li:hover {background-color: #D6EFFF;}
+#application_header .application_nav_dropdown ul.nav_list > li.first {}
+#application_header .application_nav_dropdown ul.nav_list > li.last {border-bottom-width: 0;}
+#application_header .application_nav_dropdown ul.nav_list > li * {float: left;}
+#application_header .application_nav_dropdown ul.nav_list > li img {margin-right: 5px;}
+#application_header .application_nav_dropdown ul.nav_list > li a,
+#application_header .application_nav_dropdown ul.nav_list > li label {color: black; line-height: 16px;}
+#application_header .application_nav_dropdown ul.nav_list form {float: right !important; width: 70%; overflow: auto;}
+#application_header .application_nav_dropdown ul.nav_list form input[type=text] {margin-left: 10px; width: 70%;}
+#application_header .application_nav_dropdown ul.nav_list form input.search_icon {margin: 0 0 0 5px;}
+#application_header .application_nav_dropdown ul.nav_list form img {margin: 0 0 0 5px;}
+
+
+
+/* Category listing formatting
+------------------------------------------------------------------- */
+
+.application_nav_dropdown ul.category_list li.category .category_name {
+    display: block;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 8px 4px;
+}
+
+.application_nav_dropdown ul.category_list li.category > div {overflow: auto;}
+.application_nav_dropdown ul.category_list li.category > div.selected,
+.application_nav_dropdown ul.category_list li.category > div:hover {background-color: #D6EFFF; cursor: pointer;}
+.application_nav_dropdown ul.category_list li.category > div.selected {border-top: 4px solid silver;}
+    
+.application_nav_dropdown ul.category_list li.category > div img,
+.application_nav_dropdown ul.category_list li.category > div span {display: block; float: left;}
+
+.application_nav_dropdown ul.category_list li.category > div img {margin-right: 5px;}
+.application_nav_dropdown ul.category_list li.category > div span {line-height: 16px;}
+
+.application_nav_dropdown ul.category_list li.category ul.scroll {
+    clear: both;
+    max-height: 200px;
+    overflow:  auto;
+}
+
+.application_nav_dropdown ul.category_list ul.category_item_list {
+    display: none;
+    background-color: #EFEFEF;
+}
+
+.application_nav_dropdown ul.category_item_list {display: none; border-bottom: 4px silver solid;}
+.application_nav_dropdown ul.category_item_list li {
+    font-size: 1em;
+    padding: 6px;
+    height: 16px;
+    margin-bottom: 1px;
+    background-color: White;
+}
+
+.application_nav_dropdown ul.category_item_list li div.surface {position: relative;}
+.application_nav_dropdown ul.category_item_list li div.surface span a {color: Blue;}
+.application_nav_dropdown ul.category_item_list li div.surface img {float: right;}
+.application_nav_dropdown ul.category_item_list li div.surface span,
+.application_nav_dropdown ul.category_item_list li div.surface img {cursor: pointer;}
+.application_nav_dropdown ul.category_item_list li div.label {
+    position: absolute; top: 0; right: 20px;
+    padding: 3px 6px;
+    background-color: White; color: Black; font-weight: bold;
+    border: 1px solid silver;
+}
+
+    
+
+
+/* Page class settings & main content
+--------------------------------------------------------------------------------- */
+
+#page {position: relative;  z-index: 49;  width: 960px;  margin: 0 auto;}
+#page #main_content {position: relative;  overflow: visible; clear: both;}
+#page #form_content {position: relative;  overflow: visible;}
+
+#notice {margin-bottom: 7px;}
+
+#page .app_sub_navigation {
+	margin: -15px 10px 0 0;
+	height: 31px;
+	line-height: 31px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#page .app_sub_navigation #breadcrumb_navigation {float: left;}
+#page .app_sub_navigation #account_controls {float: right;}
+#page .app_sub_navigation #account_controls li {float: left; margin-left: 10px;}
+#page .app_sub_navigation #account_controls img {float: left; display: block; margin: 8px 5px 0 5px;}
+
+
+
+/* Footer formatting
+--------------------------------------------------------------------------------- */
+
+#application_footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#application_footer p {
+    line-height: 20px;
+}
+
+
+
+/* About dialog formatting
+--------------------------------------------------------------------------------- */
+
+#about_dialog #licensing_information {margin-left: 0;  overflow: visible;}
+
+#about_dialog #licensing_information h3 {
+	float: left;  width: 19em;
+	font-weight: bold;  font-size: 1em;
+	margin-bottom: .5em;  text-align: left;
+}
+
+
+#about_dialog #licensing_information #licensing_information .html_panel_content {overflow: auto;}
+#about_dialog #licensing_information .agency_information {float: left;  margin-left: 2em;}
+#about_dialog #licensing_information .agency_information dl dt {float: left;  width: 12em;}
+
+#about_dialog #dgi_information {position: relative;  overflow: visible;}
+#about_dialog #dgi_information p {margin: 0;}
+#about_dialog #dgi_information h3 {
+	text-align: center;
+	font-size: 1em;  font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#about_dialog #dgi_information .address {float: left;  width: 20em;}
+#about_dialog #dgi_information .address span {display: block;}
+
+#about_dialog #dgi_information dl.contact {margin-left: 22em;}
+#about_dialog #dgi_information dl.contact dt {float: left;  width: 7em;}
+
+#about_dialog #dgi_information #license_agreement {margin: 2em 0 0;}
+
+#about_dialog #copyright {margin-top: 1em;  text-align: center;}
+
+
